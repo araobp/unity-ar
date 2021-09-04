@@ -26,4 +26,4 @@ I tested Spatial Anchors by developing test apps on my own. I found that the tec
 
 ### UWB
 
-Indoor positiong systems based on UWB are still very expensive.
+Indoor positioning systems based on UWB are still very expensive.
