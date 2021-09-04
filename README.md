@@ -4,7 +4,7 @@ AR building blocks.
 
 ## EDM
 
-EDM (Electric Distance Measurement) in the survey terminology is useful for AR applications as well.
+EDM (Electronic Distance Measurement) in the survey terminology is useful for AR applications as well.
 
 Last year I saw this AR deivce "[SiteVision](https://sitevision.trimble.com)" at a trade show in Tokyo. The device is also equipped with Lazer-based EDM.
 
