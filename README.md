@@ -1,4 +1,4 @@
-# unity-ar
+# Unity AR
 
 AR building blocks.
 
