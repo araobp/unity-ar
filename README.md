@@ -1,8 +1,8 @@
-# Unity AR
+# AR building blocks
 
 (Work in progress)
 
-AR building blocks.
+I have been working on AR apps over the past half year in my spare time. This project is for sorting out AR building blocks I have developed in those AR apps.
 
 ## EDM
 
