@@ -2,7 +2,7 @@
 
 (Work in progress)
 
-I have been working on AR apps over the past half year in my spare time. This repo is for sorting out AR building blocks I have developed in those AR apps.
+I have been working on AR apps over the past half year in my spare time. This repo is for sorting out AR building blocks that I have developed in those AR apps.
 
 Requirements:
 - Unity
