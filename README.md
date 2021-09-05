@@ -8,7 +8,7 @@ Requirements: Unity and ARFoundation
 
 ## Building blocks
 
-### EDM
+### EDM (LiDAR-based)
 
 EDM (Electronic Distance Measurement) in the surveying terminology is useful for AR applications as well.
 
@@ -19,6 +19,11 @@ iPad Pro and iPhone 12 Pro are equipped with LiDAR. I have found that EDM based 
 <img src="doc/EDM_test.PNG" width=200>
 
 => [code](./unity/EDM)
+
+### EDM (PointCloud-based)
+
+Most of smart phone models in the market are not equipped with LiDAR. We use point cloud for distance measurement instead.
+
 
 ### Indoor navigation
 
