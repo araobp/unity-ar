@@ -39,7 +39,11 @@ This app is just to visualize the origin on the world coordinates.
 
 ### QR code reader
 
-...
+This app uses ARCameraBackground for recognizing a QR code with ZXing library.
+
+<img src="doc/QRCodeReader.PNG" width=200>
+
+=> [code](./unity/QRCodeReader)
 
 ### Indoor navigation
 
