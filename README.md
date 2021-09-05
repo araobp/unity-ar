@@ -24,6 +24,9 @@ iPad Pro and iPhone 12 Pro are equipped with LiDAR. I have found that EDM based 
 
 Most of smart phone models in the market are not equipped with LiDAR. We use point cloud for distance measurement instead.
 
+### World origin visualization
+
+...
 
 ### Indoor navigation
 
