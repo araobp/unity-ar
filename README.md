@@ -4,7 +4,10 @@
 
 I have been working on AR apps over the past half year in my spare time. This repo is for sorting out AR building blocks I have developed in those AR apps.
 
-Requirements: Unity and ARFoundation
+Requirements:
+- Unity
+- ARFoundation and ARKit
+- iOS (iPhone/iPad)
 
 ## Building blocks
 
@@ -22,7 +25,9 @@ iPad Pro and iPhone 12 Pro are equipped with LiDAR. I have found that EDM based 
 
 ### EDM (PointCloud-based)
 
-Most of smart phone models in the market are not equipped with LiDAR. We use point cloud for distance measurement instead.
+Most of smartphone models in the market are not equipped with LiDAR. We use point cloud for distance measurement instead of LiDAR.
+
+=> [code](./unity/EDM2)
 
 ### World origin visualization
 
