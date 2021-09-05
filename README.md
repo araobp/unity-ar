@@ -4,6 +4,8 @@
 
 I have been working on AR apps over the past half year in my spare time. This repo is for sorting out AR building blocks I have developed in those AR apps.
 
+Requirements: Unity and ARFoundation
+
 ## Building blocks
 
 ### EDM
