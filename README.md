@@ -37,6 +37,10 @@ This app is just to visualize the origin on the world coordinates.
 
 => [code](./unity/WorldOrigin)
 
+### QR code reader
+
+...
+
 ### Indoor navigation
 
 This is an indoor navigation app using AR for positioning its user in a building.
