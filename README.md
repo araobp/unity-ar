@@ -16,7 +16,7 @@ Last year I saw this AR device "[SiteVision](https://sitevision.trimble.com)" at
 
 iPad Pro and iPhone 12 Pro are equipped with LiDAR. I have found that EDM based on the LiDAR is very useful when I am placing an AR anchor on a wall. I have been devising something like a mini-version of SiteVision for indoor AR applications these days.
 
-<img src="doc/EDM_test.png" width=100>
+<img src="doc/EDM_test.PNG" width=200>
 
 => [code](./unity/EDM)
 
