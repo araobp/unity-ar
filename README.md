@@ -31,7 +31,11 @@ Most of smartphone models in the market are not equipped with LiDAR. We use poin
 
 ### World origin visualization
 
-...
+This app is just to visualize the origin on the world coordinates.
+
+<img src="doc/WorldOrigin.PNG" width=200>
+
+=> [code](./unity/WorldOrigin)
 
 ### Indoor navigation
 
