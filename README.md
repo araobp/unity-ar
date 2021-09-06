@@ -45,6 +45,12 @@ This app uses ARCameraBackground for recognizing a QR code with ZXing library.
 
 => [code](./unity/QRCodeReader)
 
+### Rendering IFC BIM in AR app
+
+=> [Demo video on YouTube](https://youtu.be/BFTbxZobyvY)
+
+=> [code](./unity/ObjectPlacement)
+
 ### Indoor navigation
 
 This is an indoor navigation app using AR for positioning its user in a building.
