@@ -47,6 +47,8 @@ This app uses ARCameraBackground for recognizing a QR code with ZXing library.
 
 ### Rendering IFC BIM in AR app
 
+<img src="doc/FZK-Haus.jpg" width=500>
+
 => [Demo video on YouTube](https://youtu.be/BFTbxZobyvY)
 
 => [code](./unity/ObjectPlacement)
