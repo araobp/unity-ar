@@ -47,8 +47,7 @@ This app uses ARCameraBackground for recognizing a QR code with ZXing library.
 
 ### Rendering IFC BIM in AR app
 
-This is to explane how IFC-format BIM can be rendered in my AR app:
-https://github.com/araobp/unity-ar
+This is to explane how IFC-format BIM can be rendered in my AR app.
 
 I downloaded "FZK Haus" from the following BIM archive:
 http://openifcmodel.cs.auckland.ac.nz
