@@ -7,6 +7,12 @@ public class ObjectPlacement : MonoBehaviour
     [SerializeField]
     Dropdown m_DropdownPrefabs;
 
+    [SerializeField]
+    RawImage m_RawImageAim;
+
+    [SerializeField]
+    Text m_TextDistance;
+
     GameObject m_Instance;
 
     List<GameObject> m_ListMarkers = new List<GameObject>();
@@ -25,6 +31,9 @@ public class ObjectPlacement : MonoBehaviour
         {
             Destroy(m_Instance);
         }
+
+        m_RawImageAim.enabled = true;
+        m_TextDistance.enabled = true;
     }
 
     public void PlaceObject()
@@ -68,5 +77,8 @@ public class ObjectPlacement : MonoBehaviour
                 }
             }
         }
+
+        m_RawImageAim.enabled = false;
+        m_TextDistance.enabled = false;
     }
 }

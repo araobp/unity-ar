@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 17200d31b30784e7684b617a6acce15f, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -458,6 +458,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DropdownPrefabs: {fileID: 894893289}
+  m_RawImageAim: {fileID: 232612770}
+  m_TextDistance: {fileID: 1222472745}
 --- !u!114 &304964193
 MonoBehaviour:
   m_ObjectHideFlags: 0
