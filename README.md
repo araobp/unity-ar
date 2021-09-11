@@ -64,9 +64,15 @@ Then I modified the original FZK Haus IFC BIM with Blender (with BlenderBIM add-
 
 => [code](./unity/ObjectPlacement)
 
-### Indoor navigation
+### Dancing Mixamo characters
 
-This is an indoor navigation app using AR for positioning its user in a building.
+This is a typical AR app, but it uses the EDM feature above for placing an object at a specific location.
+
+<img src="doc/DanceAim.jpg" width=150>
+
+<img src="doc/Dance.jpg" width=150>
+
+=> [code](./unity/Dance)
 
 ## Building blocks not included in this repo.
 
