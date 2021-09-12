@@ -1237,18 +1237,6 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: FZK-Haus:8
       m_Image: {fileID: 0}
-    - m_Text: FZK-Haus:9
-      m_Image: {fileID: 0}
-    - m_Text: FZK-Haus:10
-      m_Image: {fileID: 0}
-    - m_Text: FZK-Haus:11
-      m_Image: {fileID: 0}
-    - m_Text: FZK-Haus:12
-      m_Image: {fileID: 0}
-    - m_Text: FZK-Haus:13
-      m_Image: {fileID: 0}
-    - m_Text: FZK-Haus:14
-      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
