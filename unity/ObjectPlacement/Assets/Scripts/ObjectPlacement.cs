@@ -13,16 +13,31 @@ public class ObjectPlacement : MonoBehaviour
     [SerializeField]
     Text m_TextDistance;
 
+    [SerializeField]
+    float m_Speed = 2F;
+
     GameObject m_Instance;
 
     List<GameObject> m_ListMarkers = new List<GameObject>();
 
     CommonData m_CommonData;
 
+    bool m_Advance = false;
+
     // Start is called before the first frame update
     void Start()
     {
         m_CommonData = GetComponent<CommonData>();
+    }
+
+    void Update()
+    {
+        if (m_Advance)
+        {
+            Vector3 shift = Time.deltaTime * m_CommonData.ARCamera.transform.forward * m_Speed;
+            shift.y = 0F;
+            m_Instance.transform.Translate(shift);
+        }
     }
 
     public void OnValueChanged()
@@ -34,6 +49,16 @@ public class ObjectPlacement : MonoBehaviour
 
         m_RawImageAim.enabled = true;
         m_TextDistance.enabled = true;
+    }
+
+    public void OnPointerDown()
+    {
+        m_Advance = true;
+    }
+
+    public void OnPointerUp()
+    {
+        m_Advance = false;
     }
 
     public void PlaceObject()
