@@ -74,6 +74,12 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 => [code](./unity/Dance)
 
+### 3D Scanner and AR
+
+This app visualizes 3D models scanned by this [3D Scanner app](https://apps.apple.com/us/app/3d-scanner-app/id1419913995).
+
+...
+
 ## Building blocks not included in this repo.
 
 ### Microsoft Spatial Anchors
