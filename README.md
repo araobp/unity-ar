@@ -1,8 +1,6 @@
 # AR building blocks
 
-(Work in progress)
-
-I have been working on AR apps over the past half year in my spare time. This repo is for sorting out AR building blocks that I have developed in those AR apps.
+I have been working on AR apps over the past year in my spare time. This repo is for sorting out AR building blocks that I have developed in those AR apps.
 
 Requirements:
 - Unity
@@ -73,6 +71,12 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 <img src="doc/Dance.jpg" width=150>
 
 => [code](./unity/Dance)
+
+### Drone remote control
+
+I often use this drone remote control for my AR/VR works.
+
+(Work in progress)
 
 ## Building blocks not included in this repo.
 
