@@ -72,12 +72,6 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 => [code](./unity/Dance)
 
-### Drone remote control
-
-I often use this drone remote control for my AR/VR works.
-
-(Work in progress)
-
 ## Building blocks not included in this repo.
 
 ### Microsoft Spatial Anchors
