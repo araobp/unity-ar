@@ -1,6 +1,6 @@
 # AR building blocks
 
-I have been working on AR apps over the past year (Y2021) in my spare time. This repo is for sorting out AR building blocks that I have developed in those AR apps.
+I had worked on AR apps in the past year (Y2021). This repo is for sorting out AR building blocks that I developed in those AR apps.
 
 Requirements:
 - Unity
@@ -76,7 +76,7 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 ### Microsoft Spatial Anchors
 
-I tested Spatial Anchors by developing test apps on my own. I found that the technique used in Spatial Anchor is not suitable for most of my AR-related works.
+I tested Spatial Anchors by developing test apps on my own in Spring 2021. I found that the technique used in Spatial Anchor is not suitable for most of my AR-related works.
 
 ### UWB
 
