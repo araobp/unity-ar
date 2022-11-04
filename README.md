@@ -1,8 +1,6 @@
 # AR building blocks
 
-(Work in progress)
-
-I have been working on AR apps over the past half year in my spare time. This repo is for sorting out AR building blocks that I have developed in those AR apps.
+I had worked on AR apps in the past year (Y2021). This repo is for sorting out AR building blocks that I developed in those AR apps.
 
 Requirements:
 - Unity
@@ -74,17 +72,11 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 => [code](./unity/Dance)
 
-### AR and IoT
-
-This app shows realtime IoT data on 3D models scanned by this [3D Scanner app](https://apps.apple.com/us/app/3d-scanner-app/id1419913995).
-
-...
-
 ## Building blocks not included in this repo.
 
 ### Microsoft Spatial Anchors
 
-I tested Spatial Anchors by developing test apps on my own. I found that the technique used in Spatial Anchor is not suitable for most of my AR-related works.
+I tested Spatial Anchors by developing test apps on my own in Spring 2021. I found that the technique used in Spatial Anchor is not suitable for most of my AR-related works.
 
 ### UWB
 
