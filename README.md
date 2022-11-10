@@ -79,7 +79,7 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 ## Building blocks not included in this repo.
 
-### Microsoft Spatial Anchors
+### Microsoft Azure Spatial Anchors
 
 I tested Spatial Anchors by developing test apps on my own in Spring 2021.
 
