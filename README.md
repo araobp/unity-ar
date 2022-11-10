@@ -81,7 +81,7 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 ### Microsoft Spatial Anchors
 
-I tested Spatial Anchors by developing test apps on my own in Spring 2021. I found that the technique used in Spatial Anchor is not suitable for most of my AR-related works.
+I tested Spatial Anchors by developing test apps on my own in Spring 2021.
 
 ### UWB
 
