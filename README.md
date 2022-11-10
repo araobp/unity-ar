@@ -72,9 +72,10 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 => [code](./unity/Dance)
 
-### Using Photon(PUN2) for object synchronization
+### Wish list
 
-(Work in progress)
+- Using ARWorldMap for indoor-location-based services
+- Using Photon(PUN2) for object synchronization among devices
 
 ## Building blocks not included in this repo.
 
