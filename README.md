@@ -72,6 +72,10 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 => [code](./unity/Dance)
 
+### Using Photon(PUN2) for object synchronization
+
+(Work in progress)
+
 ## Building blocks not included in this repo.
 
 ### Microsoft Spatial Anchors
