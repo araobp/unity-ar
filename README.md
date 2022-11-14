@@ -72,11 +72,16 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 => [code](./unity/Dance)
 
+### Wish list
+
+- Using ARWorldMap for indoor-location-based services
+- Using Photon(PUN2) for object synchronization among devices
+
 ## Building blocks not included in this repo.
 
-### Microsoft Spatial Anchors
+### Microsoft Azure Spatial Anchors
 
-I tested Spatial Anchors by developing test apps on my own in Spring 2021. I found that the technique used in Spatial Anchor is not suitable for most of my AR-related works.
+I tested Spatial Anchors by developing test apps on my own in Spring 2021.
 
 ### UWB
 
