@@ -72,6 +72,16 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 => [code](./unity/Dance)
 
+### Converting PDF into transparent PNG inverting black and white
+
+[This Python3 script](./python/PDF_converter_for_AR.py) is to convert a PDF document into a transparent PNG image for AR applications:
+
+```
+$ PDF_converter_for_AR.py -i floorplan_sample.pdf
+```
+
+<img src="./python/floorplan_sample.png" width=600>
+
 ### Wish list
 
 - Using ARWorldMap for indoor-location-based services
