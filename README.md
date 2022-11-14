@@ -80,7 +80,7 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 $ PDF_converter_for_AR.py -i floorplan_sample.pdf
 ```
 
-<img src="./python/floorplan_sample.png" width=600>
+<img src="./doc/floorplan_sample.jpg" width=600>
 
 ### Wish list
 
