@@ -72,6 +72,12 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 => [code](./unity/Dance)
 
+### Multiple AR markers
+
+This app places 3D objects on multiple AR markers.
+
+(Work in progress)
+
 ### Converting PDF into transparent PNG inverting black and white
 
 [This Python3 script](./python/PDF_converter_for_AR.py) is to convert a PDF document into a transparent PNG image for AR applications:
@@ -81,18 +87,3 @@ $ PDF_converter_for_AR.py -i floorplan_sample.pdf
 ```
 
 <img src="./doc/floorplan_sample.jpg" width=600>
-
-### Wish list
-
-- Using ARWorldMap for indoor-location-based services
-- Using Photon(PUN2) for object synchronization among devices
-
-## Building blocks not included in this repo.
-
-### Microsoft Azure Spatial Anchors
-
-I tested Spatial Anchors by developing test apps on my own in Spring 2021.
-
-### UWB
-
-Indoor positioning systems based on UWB are still very expensive.
