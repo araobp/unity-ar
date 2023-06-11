@@ -74,7 +74,7 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 ### Multiple AR markers
 
-This app places 3D objects on multiple AR markers.
+This app supports multiple AR markers.
 
 (Work in progress)
 
