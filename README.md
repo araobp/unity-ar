@@ -1,15 +1,16 @@
 # AR building blocks
 
-I had worked on AR apps in the past year (Y2021). This repo is for sorting out AR building blocks that I developed in those AR apps.
+I have been working on AR apps since Y2021. This repo is for sorting out AR building blocks that I have developed in those AR apps.
 
 Requirements:
 - Unity
-- ARFoundation and ARKit
-- iOS (iPhone/iPad)
+- ARFoundation and ARKit/ARCore
 
 ## Building blocks
 
 ### EDM (LiDAR-based)
+
+Note: this building block requires iPhone/iPad equipped with LiDAR.
 
 EDM (Electronic Distance Measurement) in the surveying terminology is useful for AR applications as well.
 
@@ -77,6 +78,8 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 This app supports multiple AR markers.
 
 (Work in progress)
+
+=> [code](./unity/ARMarkers)
 
 ### Converting PDF into transparent PNG inverting black and white
 
