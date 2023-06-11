@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.UI;
 
 // Reference: https://qiita.com/OKsaiyowa/items/29504242ec74cb5dfb04
 public class MultipleMarkers : MonoBehaviour
@@ -12,11 +13,25 @@ public class MultipleMarkers : MonoBehaviour
     [SerializeField]
     ARTrackedImageManager _arTrackedImageManager;
 
+    [SerializeField]
+    Button _buttonToggle;
+
     GameObject _currentArObject = null;
 
-    private readonly Dictionary<string, GameObject> _arObjects = new Dictionary<string, GameObject>();
+    readonly Dictionary<string, GameObject> _arObjects = new Dictionary<string, GameObject>();
 
-    private void Start()
+    bool _clear = false;
+
+    public void OnToggle()
+    {
+        _clear = !_clear;
+        if (_currentArObject != null)
+        {
+            _currentArObject.SetActive(!_clear);
+        }
+    }
+
+    void Start()
     {
         _arTrackedImageManager.trackedImagesChanged += OnTrackedImagesChanged;
 
@@ -29,12 +44,12 @@ public class MultipleMarkers : MonoBehaviour
         }
     }
 
-    private void OnDisable()
+    void OnDisable()
     {
         _arTrackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
     }
 
-    private void ActivateARObject(ARTrackedImage trackedImage)
+    void ActivateARObject(ARTrackedImage trackedImage)
     {
         var arObject = _arObjects[trackedImage.referenceImage.name];
         var imageMarkerTransform = trackedImage.transform;
@@ -49,7 +64,7 @@ public class MultipleMarkers : MonoBehaviour
         }
     }
 
-    private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
+    void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
         foreach (var trackedImage in eventArgs.added)
         {
@@ -65,4 +80,5 @@ public class MultipleMarkers : MonoBehaviour
             ActivateARObject(trackedImage);
         }
     }
+
 }

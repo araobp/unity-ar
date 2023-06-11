@@ -1,11 +1,13 @@
 using UnityEngine;
 
-public class CommonData: MonoBehaviour {
+public class CommonData : MonoBehaviour
+{
 
     [SerializeField]
     GameObject m_ARCamera;
 
-    public GameObject ARCamera {
+    public GameObject ARCamera
+    {
         get => m_ARCamera;
     }
 
@@ -13,6 +15,6 @@ public class CommonData: MonoBehaviour {
 
     private void Start()
     {
-       
+
     }
 }

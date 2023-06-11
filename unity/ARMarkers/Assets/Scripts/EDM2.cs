@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using TMPro;
 
 public class EDM2 : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class EDM2 : MonoBehaviour
     float m_MinimumRaycastDistance = 0.5F;
 
     [SerializeField]
-    Text m_TextDistance;
+    TextMeshProUGUI m_TextDistance;
 
     float m_Distance = 0F;
 
@@ -68,7 +69,8 @@ public class EDM2 : MonoBehaviour
                 if (_distance == 0F)
                 {
                     m_TextDistance.text = "...";
-                } else
+                }
+                else
                 {
                     m_TextDistance.text = $"{_distance.ToString("F2")}m";
                 }
