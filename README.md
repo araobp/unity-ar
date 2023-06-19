@@ -67,9 +67,9 @@ Then I modified the original FZK Haus IFC BIM with Blender (with BlenderBIM add-
 
 This is a typical AR app, but it uses the EDM feature above for placing an object at a specific location.
 
-<img src="doc/DanceAim.jpg" width=150>
+<img src="doc/DanceAim.jpg" width=200>
 
-<img src="doc/Dance.jpg" width=150>
+<img src="doc/Dance.jpg" width=200>
 
 => [code](./unity/Dance)
 
@@ -77,7 +77,7 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 This app supports multiple AR markers.
 
-<img src="doc/Chair.jpg" width=150>
+<img src="doc/Chair.jpg" width=200>
 
 => [code](./unity/ARMarkers)
 
