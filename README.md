@@ -77,7 +77,7 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 This app supports multiple AR markers.
 
-(Work in progress)
+<img src="doc/Chair.jpg" width=150>
 
 => [code](./unity/ARMarkers)
 
