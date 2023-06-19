@@ -73,7 +73,7 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 => [code](./unity/Dance)
 
-### Multiple AR markers
+### Multiple AR markers (URP)
 
 This app supports multiple AR markers.
 
