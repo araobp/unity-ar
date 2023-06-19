@@ -54,8 +54,9 @@ public class MultipleMarkers : MonoBehaviour
         var arObject = _arObjects[trackedImage.referenceImage.name];
         var imageMarkerTransform = trackedImage.transform;
 
-        var markerFrontRotation = imageMarkerTransform.rotation * Quaternion.Euler(90f, 0f, 0f);
-        arObject.transform.SetPositionAndRotation(imageMarkerTransform.transform.position, markerFrontRotation);
+        var arObjectRotation = Quaternion.Euler(0F, imageMarkerTransform.rotation.eulerAngles.y, 0F);
+
+        arObject.transform.SetPositionAndRotation(imageMarkerTransform.transform.position, arObjectRotation);
         arObject.transform.SetParent(imageMarkerTransform);
         if (trackedImage.trackingState == TrackingState.Tracking || trackedImage.trackingState == TrackingState.Limited)
         {
