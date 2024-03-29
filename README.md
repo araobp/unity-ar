@@ -81,6 +81,12 @@ This app supports multiple AR markers.
 
 => [code](./unity/ARMarkers)
 
+### VR Theater (URP) (Work in Progress)
+
+<img src="doc/VRTheater.jpg" width=300>
+
+=> [code](./unity/VRTheater)
+
 ### Converting PDF into transparent PNG inverting black and white
 
 [This Python3 script](./python/PDF_converter_for_AR.py) is to convert a PDF document into a transparent PNG image for AR applications:
