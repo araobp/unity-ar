@@ -83,7 +83,7 @@ This app supports multiple AR markers.
 
 ### VR Theater (URP) (Work in Progress)
 
-<img src="doc/VRTheater.jpg" width=300>
+<img src="doc/VRTheater.jpg" width=400>
 
 => [code](./unity/VRTheater)
 
