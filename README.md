@@ -85,7 +85,9 @@ This app supports multiple AR markers.
 
 This app is to display 240-degree panorama images taken with iPhone SE Camera App.
 
-<img src="doc/VRTheater.jpg" width=400>
+<img src="doc/VRTheater1.jpg" width=400>
+
+<img src="doc/VRTheater2.jpg" width=400>
 
 => [code](./unity/VRTheater)
 
