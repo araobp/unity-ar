@@ -11,23 +11,41 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] Button buttonL;
 
-    List<GameObject> panoramas = null;
-    int idx = 0;
+    [SerializeField] Toggle toggle;
+
+    [SerializeField] Camera camera;
+
+    const string THEATER_LAYER = "Theater";
+
+    List<GameObject> m_Panoramas = null;
+    int m_Idx = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        panoramas = GameObject.FindGameObjectsWithTag("panorama").ToList();
-        panoramas = panoramas.OrderBy(x => x.name).ToList();
-        panoramas.ToList().ForEach(p =>
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
+
+        // Screen control
+        m_Panoramas = GameObject.FindGameObjectsWithTag("panorama").ToList();
+        m_Panoramas = m_Panoramas.OrderBy(x => x.name).ToList();
+
+        m_Panoramas.ToList().ForEach(p =>
         {
             p.SetActive(false);
             Debug.Log(p.ToString());
         });
-        panoramas[idx].SetActive(true);
 
+        m_Panoramas[m_Idx].SetActive(true);
+
+
+        // Button control
         buttonR.onClick.AddListener(Forward);
         buttonL.onClick.AddListener(Back);
+
+        // Toggle control
+        toggle.onValueChanged.AddListener(delegate {
+            ToggleScreenOnly(toggle);
+        });
 
     }
 
@@ -38,23 +56,36 @@ public class GameManager : MonoBehaviour
 
     public void Forward()
     {
-        panoramas[idx].SetActive(false);
-        idx += 1;
-        if (idx >= panoramas.Count - 1)
+        m_Panoramas[m_Idx].SetActive(false);
+        m_Idx += 1;
+        if (m_Idx >= m_Panoramas.Count - 1)
         {
-            idx = panoramas.Count - 1;
+            m_Idx = m_Panoramas.Count - 1;
         }
-        panoramas[idx].SetActive(true);
+        m_Panoramas[m_Idx].SetActive(true);
     }
 
     public void Back()
     {
-        panoramas[idx].SetActive(false);
-        idx -= 1;
-        if (idx < 0)
+        m_Panoramas[m_Idx].SetActive(false);
+        m_Idx -= 1;
+        if (m_Idx < 0)
         {
-            idx = 0;
+            m_Idx = 0;
         }
-        panoramas[idx].SetActive(true);
+        m_Panoramas[m_Idx].SetActive(true);
     }
+
+    void ToggleScreenOnly(Toggle t)
+    {
+        if (t.isOn)  // Screen Only mode
+        {
+            camera.cullingMask &= ~(1 << LayerMask.NameToLayer(THEATER_LAYER));  // Turn off the layer
+        }
+        else
+        {
+            camera.cullingMask |= 1 << LayerMask.NameToLayer(THEATER_LAYER);  // Turn on the layer
+        }
+    }
+
 }

@@ -42,6 +42,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: moon1
+    second: {fileID: 2100000, guid: dac626689195746ebb9691caf2fe7ac3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: moon2
+    second: {fileID: 2100000, guid: a64dbbe3c820744de96dd3eed0fd5bfe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: panorama1
     second: {fileID: 2100000, guid: fd5b74c2796c84303bcf5f7eb62a9549, type: 2}
   - first:
@@ -67,7 +77,7 @@ ModelImporter:
   materials:
     materialImportMode: 2
     materialName: 0
-    materialSearch: 2
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
