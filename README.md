@@ -91,6 +91,8 @@ This app is to display 240-degree panorama images taken with iPhone SE Camera Ap
 
 => [code](./unity/VRTheater)
 
+Note: I have disabled the "Auto Focus" option in Camera Manager to stabilize the screen.
+
 ### Converting PDF into transparent PNG inverting black and white
 
 [This Python3 script](./python/PDF_converter_for_AR.py) is to convert a PDF document into a transparent PNG image for AR applications:
