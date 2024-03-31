@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: BlackScreen
+    second: {fileID: 2100000, guid: 091fa1d83f13e41f38c8bd7eeada7010, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Carpet
     second: {fileID: 2100000, guid: bf8e4f55963254381a22b106cdc184cf, type: 2}
   - first:
@@ -62,7 +67,7 @@ ModelImporter:
   materials:
     materialImportMode: 2
     materialName: 0
-    materialSearch: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
