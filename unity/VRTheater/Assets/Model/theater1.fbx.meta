@@ -12,58 +12,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Human.body
-    second: {fileID: 2100000, guid: e1eedb86633194f79956520341903588, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Human.elvs_50s_updo
-    second: {fileID: 2100000, guid: e26d4d3ebeec1474ab988356465a0438, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Human.eyebrow006
-    second: {fileID: 2100000, guid: 08e9882f6fe664faf9c5e677c15826bb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Human.eyelashes02
-    second: {fileID: 2100000, guid: 94caad76cd124434d8e285081cc620e0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Human.high-poly
-    second: {fileID: 2100000, guid: 53735cc9b18464e78818110654026e2c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Human.mindfront_knitted_sweater_01
-    second: {fileID: 2100000, guid: bbeeb5a71f4c342aeb6c7dfcfdceec07, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Human.punkduck_female_tight_jeans
-    second: {fileID: 2100000, guid: 3c813609fe962470dad4118d4f18bd2d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Human.teeth_base
-    second: {fileID: 2100000, guid: 0fa50eaf63d0b42c295ed69bd33fe8d8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Human.toigo_ankle_boots_female
-    second: {fileID: 2100000, guid: 749137378f8ff4e05921713181733f9e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Human.tongue01
-    second: {fileID: 2100000, guid: 660fbd200c46f4edb8616fdd71a84dc2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Light
     second: {fileID: 2100000, guid: b2871c1d3de7f4ba28f644f6aec008f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign
+    second: {fileID: 2100000, guid: 952c2b4367959449cb914dfd4fb303f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Speaker
+    second: {fileID: 2100000, guid: 525212c8a6acd4ca2a90eb7a82e50ab6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
