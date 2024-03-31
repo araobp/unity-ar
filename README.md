@@ -81,7 +81,7 @@ This app supports multiple AR markers.
 
 => [code](./unity/ARMarkers)
 
-### VR Theater (URP) (Work in Progress)
+### VR Theater (URP)
 
 This app is to display 240-degree panorama images taken with iPhone SE Camera App.
 
