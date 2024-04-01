@@ -83,7 +83,9 @@ This app supports multiple AR markers.
 
 ### VR Theater (URP)
 
-This app is to display 240-degree 16K panorama pictures taken with iPhone SE Camera App. iPad mini is the best device to enjoy the high-resolution panorama pictures with this AR/VR app.
+This app is to display 240-degree 16K panorama pictures taken with iPhone SE Camera App. iPad mini is the best device to enjoy the high-resolution panorama pictures with this AR/VR app. Just save you panorama pictures in the folder "Resources/Panorama" and make the settings below before starting the app.
+
+<img src="doc/PanoramaSettings.jpg" width=400>
 
 <img src="doc/VRTheater1.jpg" width=400>
 
