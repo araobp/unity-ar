@@ -15,28 +15,19 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] Camera camera;
 
+    [SerializeField] GameObject screen;
+
     const string THEATER_LAYER = "Theater";
 
     List<GameObject> m_Panoramas = null;
     int m_Idx = 0;
 
+    List<Object> m_Pictures = null;
+
     // Start is called before the first frame update
     void Start()
     {
         Screen.orientation = ScreenOrientation.LandscapeLeft;
-
-        // Screen control
-        m_Panoramas = GameObject.FindGameObjectsWithTag("panorama").ToList();
-        m_Panoramas = m_Panoramas.OrderBy(x => x.name).ToList();
-
-        m_Panoramas.ToList().ForEach(p =>
-        {
-            p.SetActive(false);
-            Debug.Log(p.ToString());
-        });
-
-        m_Panoramas[m_Idx].SetActive(true);
-
 
         // Button control
         buttonR.onClick.AddListener(Forward);
@@ -47,6 +38,12 @@ public class GameManager : MonoBehaviour
             ToggleScreenOnly(toggle);
         });
 
+        var pictures = Resources.LoadAll("Panorama", typeof(Texture2D)).ToList();
+        m_Pictures = pictures.OrderBy(x => x.name).ToList();
+        Texture2D tex = (Texture2D)m_Pictures[0];
+        screen.GetComponent<Renderer>().material.SetTexture("_Texture2D", tex);
+
+
     }
 
     // Update is called once per frame
@@ -56,24 +53,24 @@ public class GameManager : MonoBehaviour
 
     public void Forward()
     {
-        m_Panoramas[m_Idx].SetActive(false);
         m_Idx += 1;
-        if (m_Idx >= m_Panoramas.Count - 1)
+        if (m_Idx >= m_Pictures.Count - 1)
         {
-            m_Idx = m_Panoramas.Count - 1;
+            m_Idx = m_Pictures.Count - 1;
         }
-        m_Panoramas[m_Idx].SetActive(true);
+        Texture2D tex = (Texture2D)m_Pictures[m_Idx];
+        screen.GetComponent<Renderer>().material.SetTexture("_Texture2D", tex);
     }
 
     public void Back()
     {
-        m_Panoramas[m_Idx].SetActive(false);
         m_Idx -= 1;
         if (m_Idx < 0)
         {
             m_Idx = 0;
         }
-        m_Panoramas[m_Idx].SetActive(true);
+        Texture2D tex = (Texture2D)m_Pictures[m_Idx];
+        screen.GetComponent<Renderer>().material.SetTexture("_Texture2D", tex);
     }
 
     void ToggleScreenOnly(Toggle t)

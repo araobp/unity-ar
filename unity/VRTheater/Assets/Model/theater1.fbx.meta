@@ -7,11 +7,6 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: BlackScreen
-    second: {fileID: 2100000, guid: 091fa1d83f13e41f38c8bd7eeada7010, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Carpet
     second: {fileID: 2100000, guid: bf8e4f55963254381a22b106cdc184cf, type: 2}
   - first:
@@ -19,6 +14,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Light
     second: {fileID: 2100000, guid: b2871c1d3de7f4ba28f644f6aec008f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Screen
+    second: {fileID: 2100000, guid: b92b107afc58548748941fc6a8853e5f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -39,45 +39,10 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: hide
     second: {fileID: 2100000, guid: 7cff71203b79d416a8d3d52e8ecb5526, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: moon1
-    second: {fileID: 2100000, guid: dac626689195746ebb9691caf2fe7ac3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: moon2
-    second: {fileID: 2100000, guid: a64dbbe3c820744de96dd3eed0fd5bfe, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: panorama1
-    second: {fileID: 2100000, guid: fd5b74c2796c84303bcf5f7eb62a9549, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: panorama2
-    second: {fileID: 2100000, guid: 3a1d37993ff894e79b7c56c3d45a90f5, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: panorama3
-    second: {fileID: 2100000, guid: b92b107afc58548748941fc6a8853e5f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: panorama4
-    second: {fileID: 2100000, guid: ebeb944d097f7420ea63f8424c8417a9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: panorama5
-    second: {fileID: 2100000, guid: 49558e1bc564d4018a6ef40d79c678d2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
-    materialSearch: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
