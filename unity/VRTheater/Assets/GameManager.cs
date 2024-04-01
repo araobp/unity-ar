@@ -42,8 +42,6 @@ public class GameManager : MonoBehaviour
         m_Pictures = pictures.OrderBy(x => x.name).ToList();
         Texture2D tex = (Texture2D)m_Pictures[0];
         screen.GetComponent<Renderer>().material.SetTexture("_Texture2D", tex);
-
-
     }
 
     // Update is called once per frame
