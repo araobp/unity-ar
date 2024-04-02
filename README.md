@@ -87,6 +87,12 @@ This app is to display 240-degree 16K panorama pictures taken with iPhone SE Cam
 
 <img src="doc/PanoramaSettings.jpg" width=400>
 
+I created the following shader graph for displaying a panorama picture (Texture2D) on the 240-degree screen.
+
+<img src="doc/VRTheaterShaderGraph.png" width=400>
+
+And the screenshots of this AR app on my iPad mini.
+
 <img src="doc/VRTheater1.jpg" width=400>
 
 <img src="doc/VRTheater2.jpg" width=400>
