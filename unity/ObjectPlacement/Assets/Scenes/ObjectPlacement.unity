@@ -1335,6 +1335,26 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: FZK-Haus:8
       m_Image: {fileID: 0}
+    - m_Text: AzumaHouse:1
+      m_Image: {fileID: 0}
+    - m_Text: AzumaHouse:2
+      m_Image: {fileID: 0}
+    - m_Text: AzumaHouse:3
+      m_Image: {fileID: 0}
+    - m_Text: AzumaHouse:4
+      m_Image: {fileID: 0}
+    - m_Text: AzumaHouse:5
+      m_Image: {fileID: 0}
+    - m_Text: AzumaHouse:6
+      m_Image: {fileID: 0}
+    - m_Text: AzumaHouse:7
+      m_Image: {fileID: 0}
+    - m_Text: AzumaHouse:8
+      m_Image: {fileID: 0}
+    - m_Text: AzumaHouse:9
+      m_Image: {fileID: 0}
+    - m_Text: AzumaHouse:10
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
