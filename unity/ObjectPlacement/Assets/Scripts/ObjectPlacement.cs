@@ -22,8 +22,6 @@ public class ObjectPlacement : MonoBehaviour
 
     CommonData m_CommonData;
 
-    bool m_Advance = false;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -32,12 +30,6 @@ public class ObjectPlacement : MonoBehaviour
 
     void Update()
     {
-        if (m_Advance)
-        {
-            Vector3 shift = Time.deltaTime * m_CommonData.ARCamera.transform.forward * m_Speed;
-            shift.y = 0F;
-            m_Instance.transform.Translate(shift);
-        }
     }
 
     public void OnValueChanged()
@@ -49,16 +41,6 @@ public class ObjectPlacement : MonoBehaviour
 
         m_RawImageAim.enabled = true;
         m_TextDistance.enabled = true;
-    }
-
-    public void OnPointerDown()
-    {
-        m_Advance = true;
-    }
-
-    public void OnPointerUp()
-    {
-        m_Advance = false;
     }
 
     public void PlaceObject()
@@ -97,7 +79,6 @@ public class ObjectPlacement : MonoBehaviour
                 GameObject obj = markerTransform.gameObject;
                 if (obj.name == $"Marker{markerId}")
                 {
-                    //m_Instance.transform.rotation = markerTransform.localRotation;
                     Vector3 shift = -markerTransform.localPosition;
                     m_Instance.transform.Translate(shift);
                 }
