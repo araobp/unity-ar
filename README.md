@@ -44,7 +44,7 @@ This app uses ARCameraBackground for recognizing a QR code with ZXing library.
 
 => [code](./unity/QRCodeReader)
 
-### Rendering IFC BIM in AR app (URP) (Work in Progress, fixing a bug)
+### Rendering IFC BIM in AR app (URP)
 
 This is to explane how IFC-format BIM can be rendered in my original AR app.
 
