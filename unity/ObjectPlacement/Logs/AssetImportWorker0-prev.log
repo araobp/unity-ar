@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52377
+53363
 Successfully changed project path to: /Users/shiny/Documents/GitHub/unity-ar/unity/ObjectPlacement
 /Users/shiny/Documents/GitHub/unity-ar/unity/ObjectPlacement
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -56,12 +56,12 @@ Successfully changed project path to: /Users/shiny/Documents/GitHub/unity-ar/uni
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8286599872] Host "[IP] 192.168.0.171 [Port] 0 [Flags] 2 [Guid] 1112810157 [EditorId] 1112810157 [Version] 1048832 [Id] OSXEditor(0,araoshinyanoMacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8286599872] Host "[IP] 192.168.0.171 [Port] 0 [Flags] 2 [Guid] 1547861600 [EditorId] 1547861600 [Version] 1048832 [Id] OSXEditor(0,araoshinyanoMacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8286599872] Host "[IP] 192.168.0.171 [Port] 0 [Flags] 2 [Guid] 1112810157 [EditorId] 1112810157 [Version] 1048832 [Id] OSXEditor(0,araoshinyanoMacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8286599872] Host "[IP] 192.168.0.171 [Port] 0 [Flags] 2 [Guid] 1547861600 [EditorId] 1547861600 [Version] 1048832 [Id] OSXEditor(0,araoshinyanoMacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 11.60 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 11.02 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.22f1 (887be4894c44)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.3f1/2022.3.22f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -76,49 +76,49 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.3f1/2022.3.22f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.3f1/2022.3.22f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.3f1/2022.3.22f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56283
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56028
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.3f1/2022.3.22f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.3f1/2022.3.22f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.003194 seconds.
-- Loaded All Assemblies, in  0.249 seconds
+Registered in 0.002568 seconds.
+- Loaded All Assemblies, in  0.255 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.223 seconds
-Domain Reload Profiling: 471ms
-	BeginReloadAssembly (84ms)
+- Finished resetting the current domain, in  0.212 seconds
+Domain Reload Profiling: 467ms
+	BeginReloadAssembly (85ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (23ms)
+	RebuildCommonClasses (25ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (101ms)
-		LoadAssemblies (84ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (105ms)
+		LoadAssemblies (86ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (99ms)
-			TypeCache.Refresh (98ms)
-				TypeCache.ScanAssembly (89ms)
+		AnalyzeDomain (103ms)
+			TypeCache.Refresh (102ms)
+				TypeCache.ScanAssembly (91ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (223ms)
+	FinalizeReload (212ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (186ms)
+		SetupLoadedEditorAssemblies (175ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (67ms)
+			InitializePlatformSupportModulesInManaged (56ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
 			ProcessInitializeOnLoadAttributes (87ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -126,8 +126,8 @@ Domain Reload Profiling: 471ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.486 seconds
-Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.544 seconds
+Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
@@ -144,181 +144,49 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.450 seconds
-Domain Reload Profiling: 937ms
-	BeginReloadAssembly (89ms)
+- Finished resetting the current domain, in  0.480 seconds
+Domain Reload Profiling: 1025ms
+	BeginReloadAssembly (78ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (18ms)
-	RebuildCommonClasses (24ms)
+	RebuildCommonClasses (23ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (342ms)
-		LoadAssemblies (232ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (414ms)
+		LoadAssemblies (263ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (154ms)
-			TypeCache.Refresh (131ms)
-				TypeCache.ScanAssembly (114ms)
-			ScanForSourceGeneratedMonoScriptInfo (14ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (451ms)
+		AnalyzeDomain (185ms)
+			TypeCache.Refresh (159ms)
+				TypeCache.ScanAssembly (129ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (480ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (343ms)
+		SetupLoadedEditorAssemblies (361ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (16ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (51ms)
-			ProcessInitializeOnLoadAttributes (235ms)
-			ProcessInitializeOnLoadMethodAttributes (38ms)
+			BeforeProcessingInitializeOnLoad (55ms)
+			ProcessInitializeOnLoadAttributes (247ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.3f1/2022.3.22f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.34 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.20 seconds
+Refreshing native plugins compatible for Editor in 1.35 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6128 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 87 unused Assets / (2.0 MB). Loaded Objects now: 6587.
-Memory consumption went from 241.5 MB to 239.5 MB.
-Total: 3.755667 ms (FindLiveObjects: 0.239917 ms CreateObjectMapping: 0.075584 ms MarkObjects: 2.723833 ms  DeleteObjects: 0.715458 ms)
+Unloading 87 unused Assets / (2.1 MB). Loaded Objects now: 6587.
+Memory consumption went from 241.0 MB to 238.9 MB.
+Total: 3.726417 ms (FindLiveObjects: 0.199958 ms CreateObjectMapping: 0.072625 ms MarkObjects: 2.666042 ms  DeleteObjects: 0.787042 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 14645.182880 seconds.
-  path: Assets/Models/AzumaHouse/TileFloor.001.mat
-  artifactKey: Guid(237f0f955d5514fd591410bde1a5a004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/TileFloor.001.mat using Guid(237f0f955d5514fd591410bde1a5a004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a02f7966a7534581b6607bc061934e5e') in 0.170905 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 196.753705 seconds.
-  path: Assets/Models/AzumaHouse/Marble012_1K-JPG_NormalGL.jpg
-  artifactKey: Guid(5914456b52be44c4ab963f90d32da6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Marble012_1K-JPG_NormalGL.jpg using Guid(5914456b52be44c4ab963f90d32da6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc951c432b9ea71fec44e141952d2155') in 0.011637 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 738.694704 seconds.
-  path: Assets/Resources/Prefabs/AzumaHouse.prefab
-  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '716ea3dfb9e6df4e428034f9b31b0921') in 0.067855 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1842
-========================================================================
-Received Import Request.
-  Time since last request: 822.259486 seconds.
-  path: Assets/Resources/Prefabs/AzumaHouse.prefab
-  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37a17dfca09e3aad0bb031263fd7736c') in 0.081348 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1900
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (2.0 MB). Loaded Objects now: 6719.
-Memory consumption went from 125.5 MB to 123.5 MB.
-Total: 11.907875 ms (FindLiveObjects: 0.277959 ms CreateObjectMapping: 0.077333 ms MarkObjects: 10.782542 ms  DeleteObjects: 0.769875 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 227.610821 seconds.
-  path: Assets/Resources/Prefabs/AzumaHouse.prefab
-  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad08c52e09025b12b29eab1b17cab4da') in 0.118153 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1902
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (2.0 MB). Loaded Objects now: 6719.
-Memory consumption went from 123.6 MB to 121.6 MB.
-Total: 5.682333 ms (FindLiveObjects: 0.288417 ms CreateObjectMapping: 0.081292 ms MarkObjects: 4.656833 ms  DeleteObjects: 0.655375 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (2.0 MB). Loaded Objects now: 6719.
-Memory consumption went from 121.2 MB to 119.2 MB.
-Total: 11.765000 ms (FindLiveObjects: 0.415833 ms CreateObjectMapping: 0.082125 ms MarkObjects: 10.474959 ms  DeleteObjects: 0.791584 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.57 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (2.0 MB). Loaded Objects now: 6719.
-Memory consumption went from 119.0 MB to 117.0 MB.
-Total: 4.903250 ms (FindLiveObjects: 0.270625 ms CreateObjectMapping: 0.081375 ms MarkObjects: 3.755084 ms  DeleteObjects: 0.795875 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -335,9 +203,9 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-Thread 0x326a87000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.378 seconds
-Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
+Thread 0x31a6c7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.309 seconds
+Refreshing native plugins compatible for Editor in 1.41 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for OSXStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
@@ -350,238 +218,46 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.028 seconds
-Domain Reload Profiling: 1406ms
-	BeginReloadAssembly (140ms)
+- Finished resetting the current domain, in  1.040 seconds
+Domain Reload Profiling: 1349ms
+	BeginReloadAssembly (92ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (68ms)
+		CreateAndSetChildDomain (34ms)
 	RebuildCommonClasses (24ms)
 	RebuildNativeTypeToScriptingClass (8ms)
 	initialDomainReloadingComplete (15ms)
-	LoadAllAssembliesAndSetupDomain (190ms)
-		LoadAssemblies (211ms)
+	LoadAllAssembliesAndSetupDomain (170ms)
+		LoadAssemblies (185ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (17ms)
 			TypeCache.Refresh (7ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (10ms)
-	FinalizeReload (1029ms)
+	FinalizeReload (1041ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (350ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (20ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (51ms)
-			ProcessInitializeOnLoadAttributes (233ms)
-			ProcessInitializeOnLoadMethodAttributes (42ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 1.57 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5971 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 54 unused Assets / (2.0 MB). Loaded Objects now: 6676.
-Memory consumption went from 218.1 MB to 216.1 MB.
-Total: 4.230875 ms (FindLiveObjects: 0.258166 ms CreateObjectMapping: 0.085875 ms MarkObjects: 3.021542 ms  DeleteObjects: 0.864583 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x17e6b7000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.358 seconds
-Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.981 seconds
-Domain Reload Profiling: 1339ms
-	BeginReloadAssembly (112ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (46ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (15ms)
-	LoadAllAssembliesAndSetupDomain (200ms)
-		LoadAssemblies (198ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (39ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (20ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (982ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (315ms)
+		SetupLoadedEditorAssemblies (386ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (14ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (56ms)
-			ProcessInitializeOnLoadAttributes (207ms)
-			ProcessInitializeOnLoadMethodAttributes (34ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (255ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 1.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.35 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5971 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 54 unused Assets / (2.0 MB). Loaded Objects now: 6681.
-Memory consumption went from 224.9 MB to 222.9 MB.
-Total: 3.638458 ms (FindLiveObjects: 0.235000 ms CreateObjectMapping: 0.083458 ms MarkObjects: 2.578625 ms  DeleteObjects: 0.740666 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x17e6b7000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.308 seconds
-Refreshing native plugins compatible for Editor in 1.26 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.971 seconds
-Domain Reload Profiling: 1279ms
-	BeginReloadAssembly (94ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (14ms)
-	LoadAllAssembliesAndSetupDomain (167ms)
-		LoadAssemblies (185ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (15ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (972ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (340ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (51ms)
-			ProcessInitializeOnLoadAttributes (230ms)
-			ProcessInitializeOnLoadMethodAttributes (41ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Refreshing native plugins compatible for Editor in 1.53 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5971 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 54 unused Assets / (2.1 MB). Loaded Objects now: 6686.
-Memory consumption went from 231.8 MB to 229.8 MB.
-Total: 6.001250 ms (FindLiveObjects: 0.671542 ms CreateObjectMapping: 0.197667 ms MarkObjects: 4.203208 ms  DeleteObjects: 0.928292 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.61 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (1.9 MB). Loaded Objects now: 6686.
-Memory consumption went from 137.0 MB to 135.1 MB.
-Total: 3.491667 ms (FindLiveObjects: 0.219584 ms CreateObjectMapping: 0.073208 ms MarkObjects: 2.434667 ms  DeleteObjects: 0.763833 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.63 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (2.0 MB). Loaded Objects now: 6686.
-Memory consumption went from 134.1 MB to 132.1 MB.
-Total: 8.393042 ms (FindLiveObjects: 0.341375 ms CreateObjectMapping: 0.083833 ms MarkObjects: 7.099583 ms  DeleteObjects: 0.867875 ms)
+Unloading 54 unused Assets / (2.1 MB). Loaded Objects now: 6592.
+Memory consumption went from 221.3 MB to 219.3 MB.
+Total: 3.546375 ms (FindLiveObjects: 0.224792 ms CreateObjectMapping: 0.080708 ms MarkObjects: 2.540625 ms  DeleteObjects: 0.699750 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -599,195 +275,346 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2696.556342 seconds.
-  path: Assets/Resources/Prefabs/FZK-Haus.prefab
-  artifactKey: Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/FZK-Haus.prefab using Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceccb5881096b740506accf614ec3d4a') in 0.226148 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 810
-========================================================================
-Received Import Request.
-  Time since last request: 5.029513 seconds.
-  path: Assets/Resources/Prefabs/FZK-Haus.prefab
-  artifactKey: Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/FZK-Haus.prefab using Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e529248c3dff60447603ae1294d7f48e') in 0.030656 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 792
-========================================================================
-Received Import Request.
-  Time since last request: 4.428694 seconds.
-  path: Assets/Resources/Prefabs/FZK-Haus.prefab
-  artifactKey: Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/FZK-Haus.prefab using Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ba2d5e4596d6df33239786deb1628f') in 0.029361 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 792
-========================================================================
-Received Import Request.
-  Time since last request: 4.826886 seconds.
-  path: Assets/Resources/Prefabs/FZK-Haus.prefab
-  artifactKey: Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/FZK-Haus.prefab using Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b81a2e09a7cced1aee4206eaa1fd233') in 0.028614 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 792
-========================================================================
-Received Import Request.
-  Time since last request: 5.642301 seconds.
-  path: Assets/Resources/Prefabs/FZK-Haus.prefab
-  artifactKey: Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/FZK-Haus.prefab using Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60b3b8c4bfaf8f464a829f9cabec3340') in 0.029452 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 792
-========================================================================
-Received Import Request.
-  Time since last request: 4.419783 seconds.
-  path: Assets/Resources/Prefabs/FZK-Haus.prefab
-  artifactKey: Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/FZK-Haus.prefab using Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '584b5a0873484461b3fac2293b556f9a') in 0.030739 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 792
-========================================================================
-Received Import Request.
-  Time since last request: 4.635035 seconds.
-  path: Assets/Resources/Prefabs/FZK-Haus.prefab
-  artifactKey: Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/FZK-Haus.prefab using Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db66f01b8c283d1c9824075d2d1ee59') in 0.028814 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 792
-========================================================================
-Received Import Request.
-  Time since last request: 4.430566 seconds.
-  path: Assets/Resources/Prefabs/FZK-Haus.prefab
-  artifactKey: Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/FZK-Haus.prefab using Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b50a8b759ef46e9c8887ba874c746fe') in 0.034192 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 792
-========================================================================
-Received Import Request.
-  Time since last request: 84.859504 seconds.
+  Time since last request: 26941.719039 seconds.
   path: Assets/Resources/Prefabs/AzumaHouse.prefab
   artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d38c0769a024bf1152e67df6bd2235b') in 0.058226 seconds
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83d352127221adb4a5ab0084e6050bdf') in 0.220500 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1091
+Number of asset objects unloaded after import = 1094
 ========================================================================
 Received Import Request.
-  Time since last request: 13.423615 seconds.
+  Time since last request: 111.846879 seconds.
   path: Assets/Resources/Prefabs/AzumaHouse.prefab
   artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '757abf8cd4397b8d6cd1a865a2e507d1') in 0.029442 seconds
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b40018c89a3761f87ad71faff0cc4fd0') in 0.060540 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1091
+Number of asset objects unloaded after import = 1076
 ========================================================================
 Received Import Request.
-  Time since last request: 10.994748 seconds.
-  path: Assets/Models/AzumaHouse/AzumaHouse.fbx
-  artifactKey: Guid(9b8d850e2d6f140029d58b8cba2def6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/AzumaHouse.fbx using Guid(9b8d850e2d6f140029d58b8cba2def6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d7fb43e75e1bec10f3e0a5d2687bde') in 1.093987 seconds
+  Time since last request: 20.398134 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '492cedbecaa6b27d237a3f6584338c45') in 0.043802 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1029
+Number of asset objects unloaded after import = 1079
+========================================================================
+Received Import Request.
+  Time since last request: 13.351346 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37b0e4f3a49f3ba3174d30f39dcef893') in 0.030568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1079
+========================================================================
+Received Import Request.
+  Time since last request: 2.013685 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75516b8973cb154845d778138d364acb') in 0.029420 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1079
+========================================================================
+Received Import Request.
+  Time since last request: 5.456654 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8fde71d37cb9a171975a66c03f4d9a5') in 0.028362 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1079
+========================================================================
+Received Import Request.
+  Time since last request: 6.059070 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a60f5e3f7056962bbe57801cfe2ef30a') in 0.029464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1079
+========================================================================
+Received Import Request.
+  Time since last request: 1.002316 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d48749b9428bf32d000d473879f2f1a') in 0.028354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1079
+========================================================================
+Received Import Request.
+  Time since last request: 3.817435 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b50b1a10cf2cdc65cf952254d5ed9323') in 0.030691 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1079
+========================================================================
+Received Import Request.
+  Time since last request: 3.824907 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a6d8a03b6b7ffe82b1ad05d3ff8304') in 0.028667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1079
+========================================================================
+Received Import Request.
+  Time since last request: 2.220493 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9abfa2508da1d232772687b42d7b408') in 0.027127 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1079
+========================================================================
+Received Import Request.
+  Time since last request: 2.210827 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '882455ede6e7c8f9a53975eafe25de41') in 0.029145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1079
+========================================================================
+Received Import Request.
+  Time since last request: 6.228807 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b6ab180c3b7c6ab0f48bdbc90b85ae0') in 0.029029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1079
+========================================================================
+Received Import Request.
+  Time since last request: 1.210488 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a30c0898fada6f8d87d582988c29a03') in 0.029006 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1079
+========================================================================
+Received Import Request.
+  Time since last request: 7.463893 seconds.
+  path: Assets/Scenes/ObjectPlacement/Reflection Probe (1)-reflectionHDR.exr
+  artifactKey: Guid(2de95a455b9054b0e9a3afcb6c1544f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ObjectPlacement/Reflection Probe (1)-reflectionHDR.exr using Guid(2de95a455b9054b0e9a3afcb6c1544f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f036916cfb73a3f755a22508e7977796') in 0.096339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 51.373133 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90de5d4a04f276a6b84764a0c6eccd5f') in 0.055921 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1080
+========================================================================
+Received Import Request.
+  Time since last request: 15.872396 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a19ebd39fcb639719ede66289efc0d') in 0.041963 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1080
+========================================================================
+Received Import Request.
+  Time since last request: 21.444569 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b888a03b646c5fe8f6d17629217d8035') in 0.052872 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1080
+========================================================================
+Received Import Request.
+  Time since last request: 3.792573 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0acc091e8c9891c530eda6c1eb42f1') in 0.028624 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1080
+========================================================================
+Received Import Request.
+  Time since last request: 3.215590 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42ab0f98ba75a5e8a9f0cc57d18aab9c') in 0.028527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1080
+========================================================================
+Received Import Request.
+  Time since last request: 40.601137 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '369335c82fa7b4e70fec1191119ea5d5') in 0.056962 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1076
+========================================================================
+Received Import Request.
+  Time since last request: 1.710760 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed3da63eb8bf9dc84f75001dac5460a') in 0.038547 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1076
+========================================================================
+Received Import Request.
+  Time since last request: 8.786153 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75cb442e6cfa38a822c1095c85fad2b8') in 0.029454 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1076
+========================================================================
+Received Import Request.
+  Time since last request: 12.432247 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bc8edff19e4d85d98bd32617ed54085') in 0.028802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1080
+========================================================================
+Received Import Request.
+  Time since last request: 87.134332 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fdfb087eb7b9b4cd534da70af0f1a92') in 0.088249 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1075
+========================================================================
+Received Import Request.
+  Time since last request: 25.071142 seconds.
+  path: Assets/Models/FZK-Haus/FZK-Haus.fbm/Carpet006_1K_Color.jpg
+  artifactKey: Guid(9798d679973454239aec6b0960abfe22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/FZK-Haus/FZK-Haus.fbm/Carpet006_1K_Color.jpg using Guid(9798d679973454239aec6b0960abfe22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd691053531e511d68d443f1886225b5d') in 0.011953 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Models/FZK-Haus/FZK-Haus.fbm/Terrazzo004_1K_Roughness.jpg
+  artifactKey: Guid(18041acccbb02491e8e3f8409df135df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/FZK-Haus/FZK-Haus.fbm/Terrazzo004_1K_Roughness.jpg using Guid(18041acccbb02491e8e3f8409df135df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd5118143d30a7f2d8d404d4c4a63b2') in 0.004841 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Models/FZK-Haus/FZK-Haus.fbm/Carpet006_1K_Roughness.jpg
+  artifactKey: Guid(c6fa3d6437f24423c88243a4679b0f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/FZK-Haus/FZK-Haus.fbm/Carpet006_1K_Roughness.jpg using Guid(c6fa3d6437f24423c88243a4679b0f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee26b452d4071ae9ac2e1424d30c8a9b') in 0.004878 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Models/FZK-Haus/FZK-Haus.fbm/Terrazzo004_1K_Normal.jpg
+  artifactKey: Guid(77562969d2dc846efb466e7863bc2ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/FZK-Haus/FZK-Haus.fbm/Terrazzo004_1K_Normal.jpg using Guid(77562969d2dc846efb466e7863bc2ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dde047ea7606580e64eeedb58c1acdb') in 0.011059 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Models/FZK-Haus/FZK-Haus.fbm/Ground037_1K_Normal.jpg
+  artifactKey: Guid(6329c97f7818b470292d50f759e29bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/FZK-Haus/FZK-Haus.fbm/Ground037_1K_Normal.jpg using Guid(6329c97f7818b470292d50f759e29bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e6fe9a7265300a3f72d26481df46824') in 0.007325 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Models/FZK-Haus/FZK-Haus.fbm/Ground037_1K_Roughness.jpg
+  artifactKey: Guid(f7acfadc4f9b74492802526c82a92db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/FZK-Haus/FZK-Haus.fbm/Ground037_1K_Roughness.jpg using Guid(f7acfadc4f9b74492802526c82a92db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f4ef0f5af4394d4ed088dc14af319ee') in 0.005302 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Models/FZK-Haus/FZK-Haus.fbm/Carpet012_1K_Roughness.jpg
+  artifactKey: Guid(4a22a0a0091404379a0ecc2067bd8e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/FZK-Haus/FZK-Haus.fbm/Carpet012_1K_Roughness.jpg using Guid(4a22a0a0091404379a0ecc2067bd8e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4dff359c997cbdbea1a301bd6dab742') in 0.005788 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/Models/FZK-Haus/FZK-Haus.fbm/RoofingTiles003_1K_Color.jpg
+  artifactKey: Guid(baaf6e1093b2a41c9b311c0fc38e20d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/FZK-Haus/FZK-Haus.fbm/RoofingTiles003_1K_Color.jpg using Guid(baaf6e1093b2a41c9b311c0fc38e20d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec0c4b0cc86d1f3badb9cdf0f4b013c2') in 0.005148 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Models/FZK-Haus/FZK-Haus.fbm/Ground037_1K_Color.jpg
+  artifactKey: Guid(cee0708d76edf420a804fdc3a30bdd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/FZK-Haus/FZK-Haus.fbm/Ground037_1K_Color.jpg using Guid(cee0708d76edf420a804fdc3a30bdd07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f7047be9e237546bf07d2fa4e2f0e0e') in 0.006672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/FZK-Haus/FZK-Haus.fbm/Wood026_1K_Color.jpg
+  artifactKey: Guid(c1570aacbb2824d379464dab5a10c275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/FZK-Haus/FZK-Haus.fbm/Wood026_1K_Color.jpg using Guid(c1570aacbb2824d379464dab5a10c275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd236ddcb65a4567ecce0c2cbe14bf104') in 0.007793 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.515923 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4a6b608569cde2e67030f0dd9f92103') in 0.051222 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1076
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (1.9 MB). Loaded Objects now: 6774.
-Memory consumption went from 135.0 MB to 133.1 MB.
-Total: 4.865708 ms (FindLiveObjects: 0.290084 ms CreateObjectMapping: 0.081958 ms MarkObjects: 3.667583 ms  DeleteObjects: 0.825792 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 156.876863 seconds.
-  path: Assets/Resources/Prefabs/AzumaHouse.prefab
-  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed32a166468ccc769a2e057f896b01d6') in 0.064764 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1090
-========================================================================
-Received Import Request.
-  Time since last request: 8.265080 seconds.
-  path: Assets/Resources/Prefabs/AzumaHouse.prefab
-  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cc3ca5897ce4b799658eaef9d0048d2') in 0.034252 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1076
-========================================================================
-Received Import Request.
-  Time since last request: 48.632638 seconds.
-  path: Assets/Resources/Prefabs/AzumaHouse.prefab
-  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cba6fa9029ed14aebc23a8d43360f04') in 0.030116 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1076
-========================================================================
-Received Import Request.
-  Time since last request: 0.646011 seconds.
-  path: Assets/Resources/Prefabs/AzumaHouse.prefab
-  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f3fac42a2b16543b4a7467fd691407d') in 0.029028 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1076
-========================================================================
-Received Import Request.
-  Time since last request: 3.856734 seconds.
-  path: Assets/Resources/Prefabs/AzumaHouse.prefab
-  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cc8a98d5c97d212d0cb77df93e71278') in 0.031232 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1076
-========================================================================
-Received Import Request.
-  Time since last request: 34.565527 seconds.
-  path: Assets/Resources/Prefabs/AzumaHouse.prefab
-  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82ca3835813d9514df8e3044c30b1dc8') in 0.029037 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1076
-========================================================================
-Received Import Request.
-  Time since last request: 4.886578 seconds.
-  path: Assets/Resources/Prefabs/AzumaHouse.prefab
-  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5862603d6116c48990300d8a4991f932') in 0.029012 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1076
-========================================================================
-Received Import Request.
-  Time since last request: 3.272523 seconds.
-  path: Assets/Resources/Prefabs/AzumaHouse.prefab
-  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e68fc36512816ae2f923f82c37395c42') in 0.028541 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1076
-========================================================================
-Received Import Request.
-  Time since last request: 5.377144 seconds.
-  path: Assets/Resources/Prefabs/AzumaHouse.prefab
-  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2bf596a3a164968d88035c0b57a131b') in 0.029798 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1076
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.65 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (2.0 MB). Loaded Objects now: 6774.
-Memory consumption went from 133.1 MB to 131.0 MB.
-Total: 4.725875 ms (FindLiveObjects: 0.259417 ms CreateObjectMapping: 0.087916 ms MarkObjects: 3.434209 ms  DeleteObjects: 0.944000 ms)
+Unloading 9 unused Assets / (2.1 MB). Loaded Objects now: 6717.
+Memory consumption went from 132.5 MB to 130.4 MB.
+Total: 9.414709 ms (FindLiveObjects: 0.314375 ms CreateObjectMapping: 0.083500 ms MarkObjects: 8.165666 ms  DeleteObjects: 0.850917 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (2.0 MB). Loaded Objects now: 6717.
+Memory consumption went from 130.0 MB to 128.0 MB.
+Total: 22.245125 ms (FindLiveObjects: 0.351459 ms CreateObjectMapping: 0.079541 ms MarkObjects: 20.989792 ms  DeleteObjects: 0.824125 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (2.1 MB). Loaded Objects now: 6717.
+Memory consumption went from 127.9 MB to 125.8 MB.
+Total: 13.322208 ms (FindLiveObjects: 0.341167 ms CreateObjectMapping: 0.087625 ms MarkObjects: 11.638667 ms  DeleteObjects: 1.254167 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -805,68 +632,20 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 712.674329 seconds.
-  path: Assets/Resources/Prefabs/FZK-Haus.prefab
-  artifactKey: Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/FZK-Haus.prefab using Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3f1acbbb98cc62a97baa89259593cd') in 0.094258 seconds
+  Time since last request: 887.767954 seconds.
+  path: Assets/Resources/Prefabs/AzumaHouse.prefab
+  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a50f51602ae359eda05487a7a0eabe1') in 0.108664 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 792
-========================================================================
-Received Import Request.
-  Time since last request: 39.522842 seconds.
-  path: Assets/Resources/Prefabs/FZK-Haus.prefab
-  artifactKey: Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/FZK-Haus.prefab using Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d2fe839d7be2511eaf4559533b021ac') in 0.047750 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 792
-========================================================================
-Received Import Request.
-  Time since last request: 22.995087 seconds.
-  path: Assets/Resources/Prefabs/FZK-Haus.prefab
-  artifactKey: Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/FZK-Haus.prefab using Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7983c28ae87d5c98e959ae9ce31bf6c') in 0.029959 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 792
-========================================================================
-Received Import Request.
-  Time since last request: 6.828979 seconds.
-  path: Assets/Resources/Prefabs/FZK-Haus.prefab
-  artifactKey: Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/FZK-Haus.prefab using Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd96bcd2b12b5c4d6080d50812a3ce015') in 0.029315 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 792
-========================================================================
-Received Import Request.
-  Time since last request: 31.050297 seconds.
-  path: Assets/Resources/Prefabs/FZK-Haus.prefab
-  artifactKey: Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/FZK-Haus.prefab using Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a34f53308e589779695ad47fd0b0a7aa') in 0.032241 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 792
-========================================================================
-Received Import Request.
-  Time since last request: 15.748211 seconds.
-  path: Assets/Resources/Prefabs/FZK-Haus.prefab
-  artifactKey: Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/FZK-Haus.prefab using Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0c1c8b713623a1be998ef082c59538c') in 0.029642 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 792
-========================================================================
-Received Import Request.
-  Time since last request: 2.000776 seconds.
-  path: Assets/Resources/Prefabs/FZK-Haus.prefab
-  artifactKey: Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/FZK-Haus.prefab using Guid(99dee650a0f664120b50103327d1853d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f49a67cb83f686e1a0bc288462ef462a') in 0.029880 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 792
+Number of asset objects unloaded after import = 1076
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 1.64 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (2.0 MB). Loaded Objects now: 6774.
-Memory consumption went from 130.9 MB to 128.9 MB.
-Total: 9.848041 ms (FindLiveObjects: 0.319042 ms CreateObjectMapping: 0.085958 ms MarkObjects: 8.354750 ms  DeleteObjects: 1.087250 ms)
+Unloading 9 unused Assets / (2.1 MB). Loaded Objects now: 6717.
+Memory consumption went from 125.6 MB to 123.5 MB.
+Total: 17.838833 ms (FindLiveObjects: 0.725542 ms CreateObjectMapping: 0.081417 ms MarkObjects: 16.162833 ms  DeleteObjects: 0.868166 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -884,28 +663,20 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 182.978451 seconds.
+  Time since last request: 79.446109 seconds.
   path: Assets/Resources/Prefabs/AzumaHouse.prefab
   artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aedc24065baf9a0e0957ab099a79c56') in 0.081169 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1076
-========================================================================
-Received Import Request.
-  Time since last request: 6.658621 seconds.
-  path: Assets/Resources/Prefabs/AzumaHouse.prefab
-  artifactKey: Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52375bb2b566cf93ca52eed9e8f84c1b') in 0.031464 seconds
+Start importing Assets/Resources/Prefabs/AzumaHouse.prefab using Guid(91c9846a331ec4e8da7ba1705a93c9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f261e068d1cff0ab1087cac1ce8c035') in 0.051365 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1076
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 1.63 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (2.0 MB). Loaded Objects now: 6774.
-Memory consumption went from 128.7 MB to 126.6 MB.
-Total: 4.466792 ms (FindLiveObjects: 0.275750 ms CreateObjectMapping: 0.082042 ms MarkObjects: 3.185125 ms  DeleteObjects: 0.923542 ms)
+Unloading 9 unused Assets / (2.1 MB). Loaded Objects now: 6717.
+Memory consumption went from 123.3 MB to 121.2 MB.
+Total: 5.464459 ms (FindLiveObjects: 0.277875 ms CreateObjectMapping: 0.082000 ms MarkObjects: 4.256125 ms  DeleteObjects: 0.847875 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
