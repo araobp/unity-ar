@@ -57,7 +57,7 @@ Then I modified the original BIM with Blender (with BlenderBIM add-on) for my AR
 - added a piano chair
 - etc
  
-<img src="doc/FZK-Haus.jpg" width=500>
+<img src="doc/AzumaHouse.jpg" width=500>
 
 => [Demo video on YouTube](https://youtu.be/BFTbxZobyvY)
 
