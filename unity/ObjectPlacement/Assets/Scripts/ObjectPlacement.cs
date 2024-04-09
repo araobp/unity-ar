@@ -97,7 +97,7 @@ public class ObjectPlacement : MonoBehaviour
                 GameObject obj = markerTransform.gameObject;
                 if (obj.name == $"Marker{markerId}")
                 {
-                    m_Instance.transform.rotation = markerTransform.localRotation;
+                    //m_Instance.transform.rotation = markerTransform.localRotation;
                     Vector3 shift = -markerTransform.localPosition;
                     m_Instance.transform.Translate(shift);
                 }
