@@ -3,26 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Monitors the Main Camera's world position and displays the coordinates on the UI.
+/// </summary>
 public class WorldCoords : MonoBehaviour
 {
+    // Serialized fields for UI Text components assigned in the Unity Inspector
     [SerializeField]
-    GameObject m_ARCamera;
+    Text _textX;
 
     [SerializeField]
-    Text m_TextX;
+    Text _textY;
 
     [SerializeField]
-    Text m_TextY;
+    Text _textZ;
 
-    [SerializeField]
-    Text m_TextZ;
-
-    // Update is called once per frame
+    // Update is called once per frame to refresh coordinate values
     void Update()
     {
-        Vector3 p = m_ARCamera.transform.position;
-        m_TextX.text = $"X: {p.x.ToString("F2")}m";
-        m_TextY.text = $"Y: {p.y.ToString("F2")}m";
-        m_TextZ.text = $"Z: {p.z.ToString("F2")}m";
+        // Capture the current world position of the main camera
+        Vector3 position = Camera.main.transform.position;
+
+        // Format the position components into strings with 2 decimal places and update the UI
+        _textX.text = $"X: {position.x.ToString("F2")}m";
+        _textY.text = $"Y: {position.y.ToString("F2")}m";
+        _textZ.text = $"Z: {position.z.ToString("F2")}m";
     }
 }
