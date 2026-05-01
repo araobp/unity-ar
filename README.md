@@ -110,3 +110,9 @@ $ PDF_converter_for_AR.py -i floorplan_sample.pdf
 ```
 
 <img src="./doc/floorplan_sample.jpg" width=600>
+
+## Note
+
+### Blackscreen problem on URP with Android.
+
+If you don't specifically need Vulkan's performance benefits, the simplest path for your Android smartphone is to remove Vulkan from the Graphics APIs list and use OpenGLES3. This avoids the need for the Command Buffer feature and is generally more "battle-tested" for AR projects.
