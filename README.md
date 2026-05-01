@@ -22,7 +22,7 @@ iPad Pro and iPhone 12 Pro are equipped with LiDAR. I have found that EDM based 
 
 => [code](./unity/EDM)
 
-### EDM (PointCloud-based)
+### EDM2 (ARPlane/PointCloud-based)
 
 Most of smartphone models in the market are not equipped with LiDAR. We use point cloud for distance measurement instead of LiDAR.
 
