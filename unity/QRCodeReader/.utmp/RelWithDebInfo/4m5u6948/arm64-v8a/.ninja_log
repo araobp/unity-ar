@@ -1,0 +1,3 @@
+# ninja log v5
+0	235	1777622998656071061	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	e74fea77a019caef
+236	410	1777622998802319605	/Users/shiny/Documents/GitHub/unity-ar/unity/QRCodeReader/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4m5u6948/obj/arm64-v8a/libswappywrapper.so	5a25a9d443e213ca

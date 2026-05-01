@@ -1,0 +1,1 @@
+/Users/shiny/Documents/GitHub/unity-ar/unity/QRCodeReader/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/FramePacing/UnitySwappyWrapper.h
