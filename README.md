@@ -1,6 +1,6 @@
-# AR building blocks
+# AR Building Blocks
 
-I have been working on AR apps since Y2021. This repo is for sorting out AR building blocks that I have developed in those AR apps.
+I have been developing AR applications since 2021. This repository serves as a collection of the AR building blocks I have created during that time.
 
 Requirements:
 - Unity
@@ -10,13 +10,13 @@ Requirements:
 
 ### EDM (LiDAR-based)
 
-Note: this building block requires iPhone/iPad equipped with LiDAR.
+Note: This building block requires an iPhone or iPad equipped with a LiDAR scanner.
 
-EDM (Electronic Distance Measurement) in the surveying terminology is useful for AR applications as well.
+EDM (Electronic Distance Measurement), a term from surveying, is also highly useful in AR applications.
 
-Last year I saw this AR device "[SiteVision](https://sitevision.trimble.com)" at a trade show in Tokyo. The device is also equipped with Lazer-based EDM.
+I recently encountered "[SiteVision](https://sitevision.trimble.com)," an AR device equipped with laser-based EDM, at a trade show in Tokyo.
 
-iPad Pro and iPhone 12 Pro are equipped with LiDAR. I have found that EDM based on the LiDAR is very useful when I am placing an AR anchor on a wall.
+The iPad Pro and iPhone 12 Pro (and later) feature LiDAR. I've found that LiDAR-based EDM is exceptionally useful for placing AR anchors accurately on walls.
 
 <img src="doc/EDM_test.PNG" width=200>
 
@@ -65,7 +65,7 @@ Then I modified the original BIM with Blender (with BlenderBIM add-on) for my AR
 
 ### Dancing Mixamo characters
 
-This is a typical AR app, but it uses the EDM feature above for placing an object at a specific location.
+This project demonstrates a standard AR application that leverages the EDM feature mentioned above to place characters at specific locations.
 
 <img src="doc/DanceAim.jpg" width=200>
 
@@ -75,7 +75,7 @@ This is a typical AR app, but it uses the EDM feature above for placing an objec
 
 ### Multiple AR markers (URP)
 
-This app supports multiple AR markers.
+This application supports the tracking of multiple AR markers simultaneously.
 
 <img src="doc/Chair.jpg" width=200>
 
@@ -83,15 +83,15 @@ This app supports multiple AR markers.
 
 ### VR Theater (URP)
 
-This app is to display 240-degree 16K panorama pictures taken with iPhone SE Camera App. iPad mini is the best device to enjoy the high-resolution panorama pictures with this AR/VR app. Just save you panorama pictures in the folder "Resources/Panorama" and make the settings below before starting the app.
+This application displays 240-degree 16K panoramic photos captured with the iPhone SE Camera app. The iPad mini is particularly well-suited for viewing these high-resolution panoramas. To use your own photos, save them in the `Resources/Panorama` folder and configure the settings as shown below.
 
 <img src="doc/PanoramaSettings.jpg" width=400>
 
-I created the following shader graph for displaying a panorama picture (Texture2D) on the 240-degree screen.
+I developed the following Shader Graph to map panoramic textures (Texture2D) onto a 240-degree virtual screen.
 
 <img src="doc/VRTheaterShaderGraph.png" width=400>
 
-And the screenshots of this AR app on my iPad mini.
+Screenshots of the application running on an iPad mini:
 
 <img src="doc/VRTheater1.jpg" width=400>
 
@@ -99,11 +99,11 @@ And the screenshots of this AR app on my iPad mini.
 
 => [code](./unity/VRTheater)
 
-Note: I have disabled the "Auto Focus" option in Camera Manager to stabilize the screen.
+Note: I disabled the "Auto Focus" option in the AR Camera Manager to improve tracking stability.
 
 ### Converting PDF into transparent PNG inverting black and white
 
-[This Python3 script](./python/PDF_converter_for_AR.py) is to convert a PDF document into a transparent PNG image for AR applications:
+This Python 3 script converts PDF documents into transparent PNG images suitable for AR applications:
 
 ```
 $ PDF_converter_for_AR.py -i floorplan_sample.pdf
