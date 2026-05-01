@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/shiny/Documents/GitHub/unity-ar/unity/ObjectPlacement/.utmp/RelWithDebInfo/4h2d6a6f/armeabi-v7a",
+  "command": "/Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi30 --sysroot=/Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/PlaybackEngines/AndroidPlayer/NDK/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DEXTERNAL_FRAME_PACING_CODE -Dswappywrapper_EXPORTS -I/Users/shiny/Documents/GitHub/unity-ar/unity/ObjectPlacement/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/FramePacing -isystem /Users/shiny/.gradle/caches/8.13/transforms/6553fed145da0193876e5b502bd35441/transformed/jetified-games-frame-pacing-2.1.2/prefab/modules/swappy_static/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Wall -Wextra -pedantic -Werror -O2 -g -DNDEBUG -fPIC -o FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o -c /Users/shiny/Documents/GitHub/unity-ar/unity/ObjectPlacement/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/FramePacing/UnitySwappyWrapper.cpp",
+  "file": "/Users/shiny/Documents/GitHub/unity-ar/unity/ObjectPlacement/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/FramePacing/UnitySwappyWrapper.cpp"
+}
+]

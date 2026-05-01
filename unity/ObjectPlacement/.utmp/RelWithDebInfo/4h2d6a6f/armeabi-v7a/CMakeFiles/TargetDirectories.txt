@@ -1,0 +1,5 @@
+/Users/shiny/Documents/GitHub/unity-ar/unity/ObjectPlacement/.utmp/RelWithDebInfo/4h2d6a6f/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/shiny/Documents/GitHub/unity-ar/unity/ObjectPlacement/.utmp/RelWithDebInfo/4h2d6a6f/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/shiny/Documents/GitHub/unity-ar/unity/ObjectPlacement/.utmp/RelWithDebInfo/4h2d6a6f/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
+/Users/shiny/Documents/GitHub/unity-ar/unity/ObjectPlacement/.utmp/RelWithDebInfo/4h2d6a6f/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
+/Users/shiny/Documents/GitHub/unity-ar/unity/ObjectPlacement/.utmp/RelWithDebInfo/4h2d6a6f/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir

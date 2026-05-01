@@ -8,38 +8,38 @@ using UnityEngine.XR.ARSubsystems;
 public class EDM2 : MonoBehaviour
 {
     [SerializeField]
-    ARPlaneManager m_ARPlaneManager;
+    ARPlaneManager _ARPlaneManager;
 
     [SerializeField]
-    ARRaycastManager m_ARRaycastManager;
+    ARRaycastManager _ARRaycastManager;
 
     [SerializeField]
-    float m_MinimumRaycastDistance = 0.5F;
+    float _MinimumRaycastDistance = 0.5F;
 
     [SerializeField]
-    Text m_TextDistance;
+    Text _TextDistance;
 
-    float m_Distance = 0F;
+    float _Distance = 0F;
 
-    Vector2 m_aimPosition = new Vector2(Screen.width / 2, Screen.height / 2);
+    Vector2 _aimPosition = new Vector2(Screen.width / 2, Screen.height / 2);
 
-    Transform m_arCameraTransform;
+    Transform _arCameraTransform;
 
-    CommonData m_CommonData;
+    CommonData _CommonData;
 
     // Raycast against planes and feature points
     const TrackableType trackableTypes =
         TrackableType.FeaturePoint |
         TrackableType.PlaneWithinPolygon;
 
-    List<ARRaycastHit> m_hits = new List<ARRaycastHit>();
+    List<ARRaycastHit> _hits = new List<ARRaycastHit>();
 
     // Start is called before the first frame update
     void Start()
     {
-        m_CommonData = GetComponent<CommonData>();
+        _CommonData = GetComponent<CommonData>();
 
-        m_arCameraTransform = m_CommonData.ARCamera.transform;
+        _arCameraTransform = Camera.main.transform;
 
         StartCoroutine(UpdateDistance());
     }
@@ -49,28 +49,28 @@ public class EDM2 : MonoBehaviour
     {
         while (true)
         {
-            if (m_ARPlaneManager != null)
+            if (_ARPlaneManager != null)
             {
                 float _distance = 0F;
 
-                if (m_ARRaycastManager.Raycast(m_aimPosition, m_hits, trackableTypes))
+                if (_ARRaycastManager.Raycast(_aimPosition, _hits, trackableTypes))
                 {
-                    Vector3 point = m_hits[m_hits.Count - 1].pose.position;  // takes the furthest hit point
-                    _distance = (point - m_arCameraTransform.position).magnitude;
-                    if (_distance < m_MinimumRaycastDistance)
+                    Vector3 point = _hits[_hits.Count - 1].pose.position;  // takes the furthest hit point
+                    _distance = (point - _arCameraTransform.position).magnitude;
+                    if (_distance < _MinimumRaycastDistance)
                     {
                         _distance = 0F;
                     }
                 }
 
-                m_CommonData.distance = _distance;
+                _CommonData.distance = _distance;
 
                 if (_distance == 0F)
                 {
-                    m_TextDistance.text = "...";
+                    _TextDistance.text = "...";
                 } else
                 {
-                    m_TextDistance.text = $"{_distance.ToString("F2")}m";
+                    _TextDistance.text = $"{_distance.ToString("F2")}m";
                 }
             }
             yield return new WaitForSeconds(0.2F);
@@ -78,7 +78,7 @@ public class EDM2 : MonoBehaviour
     }
 
     float distance
-    {
-        get => m_Distance;
+    { // This property is not used anywhere in the provided code. Consider removing it if not needed.
+        get => _Distance;
     }
 }

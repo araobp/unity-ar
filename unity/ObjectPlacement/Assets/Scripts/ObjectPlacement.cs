@@ -5,60 +5,57 @@ using UnityEngine.UI;
 public class ObjectPlacement : MonoBehaviour
 {
     [SerializeField]
-    Dropdown m_DropdownPrefabs;
+    Dropdown _DropdownPrefabs;
 
     [SerializeField]
-    RawImage m_RawImageAim;
+    RawImage _RawImageAim;
 
     [SerializeField]
-    Text m_TextDistance;
+    CommonData _CommonData;
 
     [SerializeField]
-    float m_Speed = 2F;
+    Text _TextDistance;
 
-    GameObject m_Instance;
+    GameObject _Instance;
 
-    List<GameObject> m_ListMarkers = new List<GameObject>();
-
-    CommonData m_CommonData;
+    List<GameObject> _ListMarkers = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
-        m_CommonData = GetComponent<CommonData>();
     }
 
     void Update()
     {
     }
 
-    public void OnValueChanged()
+    public void OnDropdownValueChanged() // Renamed for clarity, as it's likely tied to the dropdown.
     {
-        if (m_Instance != null)
+        if (_Instance != null)
         {
-            Destroy(m_Instance);
+            Destroy(_Instance);
         }
 
-        m_RawImageAim.enabled = true;
-        m_TextDistance.enabled = true;
+        _RawImageAim.enabled = true;
+        _TextDistance.enabled = true;
     }
 
     public void PlaceObject()
     {
-        if (m_CommonData.distance != 0F)
+        if (_CommonData.distance != 0F)
         {
-            string s = m_DropdownPrefabs.options[m_DropdownPrefabs.value].text;
+            string s = _DropdownPrefabs.options[_DropdownPrefabs.value].text;
             string[] id = s.Split(':');
             string prefabName = id[0];
             string markerId = id[1];
 
-            GameObject prefab = Resources.Load<GameObject>($"Prefabs/{prefabName}");
+            GameObject prefab = Resources.Load<GameObject>($"Prefabs/{prefabName}"); // Consider caching prefabs if they are loaded frequently.
 
-            Transform t = m_CommonData.ARCamera.transform;
+            Transform t = Camera.main.transform;
 
             Vector3 cameraPos = t.position;
             Vector3 cameraForward = t.forward;
-            Vector3 hitPoint = cameraPos + cameraForward * m_CommonData.distance;
+            Vector3 hitPoint = cameraPos + cameraForward * _CommonData.distance;
             Vector3 p = hitPoint;
 
             Vector3 pos = cameraPos;
@@ -66,12 +63,12 @@ public class ObjectPlacement : MonoBehaviour
             p.y = 0F;
             Vector3 toward = pos - p;
 
-            if (m_Instance != null)
+            if (_Instance != null)
             {
-                Destroy(m_Instance);
+                Destroy(_Instance);
             }
 
-            m_Instance = Instantiate(prefab, hitPoint, Quaternion.LookRotation(toward.normalized, Vector3.up));
+            _Instance = Instantiate(prefab, hitPoint, Quaternion.LookRotation(toward.normalized, Vector3.up));
 
             GameObject m = GameObject.FindGameObjectWithTag("Markers");
             foreach (Transform markerTransform in m.transform)
@@ -80,12 +77,12 @@ public class ObjectPlacement : MonoBehaviour
                 if (obj.name == $"Marker{markerId}")
                 {
                     Vector3 shift = -markerTransform.localPosition;
-                    m_Instance.transform.Translate(shift);
+                    _Instance.transform.Translate(shift);
                 }
             }
         }
 
-        m_RawImageAim.enabled = false;
-        m_TextDistance.enabled = false;
+        _RawImageAim.enabled = false;
+        _TextDistance.enabled = false;
     }
 }
