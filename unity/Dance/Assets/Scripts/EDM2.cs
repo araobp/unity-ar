@@ -5,80 +5,95 @@ using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
+/// <summary>
+/// Manages distance measurement in AR space and updates shared data.
+/// Uses raycasting from the center of the screen to calculate distance to planes or feature points.
+/// </summary>
 public class EDM2 : MonoBehaviour
 {
     [SerializeField]
-    ARPlaneManager m_ARPlaneManager;
+    [Tooltip("Reference to the AR Plane Manager")]
+    ARPlaneManager _arPlaneManager;
 
     [SerializeField]
-    ARRaycastManager m_ARRaycastManager;
+    [Tooltip("Reference to the AR Raycast Manager")]
+    ARRaycastManager _arRaycastManager;
 
     [SerializeField]
-    float m_MinimumRaycastDistance = 0.5F;
+    [Tooltip("The minimum distance required for a valid measurement")]
+    float _minimumRaycastDistance = 0.5F;
 
     [SerializeField]
-    Text m_TextDistance;
+    [Tooltip("UI Text to display the measured distance")]
+    Text _textDistance;
 
-    float m_Distance = 0F;
+    // Internal storage for the measured distance
+    float _distance = 0F;
 
-    Vector2 m_aimPosition = new Vector2(Screen.width / 2, Screen.height / 2);
+    // Screen position for the raycast (center of the screen)
+    Vector2 _aimPosition = new Vector2(Screen.width / 2, Screen.height / 2);
 
-    Transform m_arCameraTransform;
+    // Reference to the main AR camera's transform
+    Transform _arCameraTransform;
 
-    CommonData m_CommonData;
+    CommonData _commonData;
 
-    // Raycast against planes and feature points
-    const TrackableType trackableTypes =
-        TrackableType.FeaturePoint |
-        TrackableType.PlaneWithinPolygon;
+    // Reusable list to store raycast hits
+    List<ARRaycastHit> _hits = new List<ARRaycastHit>();
 
-    List<ARRaycastHit> m_hits = new List<ARRaycastHit>();
-
-    // Start is called before the first frame update
     void Start()
     {
-        m_CommonData = GetComponent<CommonData>();
+        _commonData = GetComponent<CommonData>();
 
-        m_arCameraTransform = m_CommonData.ARCamera.transform;
+        _arCameraTransform = Camera.main.transform;
 
         StartCoroutine(UpdateDistance());
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Coroutine that periodically performs a raycast to update the current distance.
+    /// </summary>
     IEnumerator UpdateDistance()
     {
         while (true)
         {
-            if (m_ARPlaneManager != null)
+            if (_arPlaneManager != null)
             {
-                float _distance = 0F;
+                float currentDistance = 0F;
 
-                if (m_ARRaycastManager.Raycast(m_aimPosition, m_hits, trackableTypes))
+                if (_arRaycastManager.Raycast(_aimPosition, _hits, TrackableType.PlaneWithinPolygon))
                 {
-                    Vector3 point = m_hits[m_hits.Count - 1].pose.position;  // takes the furthest hit point
-                    _distance = (point - m_arCameraTransform.position).magnitude;
-                    if (_distance < m_MinimumRaycastDistance)
+                    // Retrieve the furthest hit point among detected trackables
+                    Vector3 point = _hits[_hits.Count - 1].pose.position;
+                    currentDistance = (point - _arCameraTransform.position).magnitude;
+                    
+                    // Reset distance if it falls below the minimum threshold
+                    if (currentDistance < _minimumRaycastDistance)
                     {
-                        _distance = 0F;
+                        currentDistance = 0F;
                     }
                 }
 
-                m_CommonData.distance = _distance;
+                _commonData.distance = currentDistance;
 
-                if (_distance == 0F)
+                if (currentDistance == 0F)
                 {
-                    m_TextDistance.text = "...";
+                    _textDistance.text = "...";
                 } else
                 {
-                    m_TextDistance.text = $"{_distance.ToString("F2")}m";
+                    _textDistance.text = $"{currentDistance.ToString("F2")}m";
                 }
             }
+            // Update measurement every 0.2 seconds to save performance
             yield return new WaitForSeconds(0.2F);
         }
     }
 
-    float distance
+    /// <summary>
+    /// Public access to the measured distance.
+    /// </summary>
+    public float distance
     {
-        get => m_Distance;
+        get => _distance;
     }
 }

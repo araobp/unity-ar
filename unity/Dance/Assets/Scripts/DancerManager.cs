@@ -2,60 +2,77 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Handles the instantiation, placement, and animation control of the dancer character.
+/// Interacts with the AR environment through CommonData.
+/// </summary>
 public class DancerManager : MonoBehaviour
 {
     [SerializeField]
-    RawImage m_RawImageAim;
+    RawImage _rawImageAim;
 
     [SerializeField]
-    Text m_TextDistance;
+    Text _textDistance;
 
     [SerializeField]
-    Slider m_SliderScale;
+    Slider _sliderScale;
 
     [SerializeField]
-    Dropdown m_DropdownCharacter;
+    Dropdown _dropdownCharacter;
 
-    GameObject m_Instance;
+    // Reference to the currently instantiated character
+    GameObject _instance;
 
-    CommonData m_CommonData;
+    CommonData _commonData;
 
-    Animator m_Animator;
+    // Cache for the animator of the current instance
+    Animator _animator;
 
+    /// <summary>
+    /// Calculates character scale based on UI slider value.
+    /// </summary>
     Vector3 scale
     {
-        get => Vector3.one * (m_SliderScale.value / 10F);
+        get => Vector3.one * (_sliderScale.value / 10F);
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-        m_CommonData = GetComponent<CommonData>();
+        _commonData = GetComponent<CommonData>();
     }
 
+    /// <summary>
+    /// Removes the current dancer instance and resets the UI state.
+    /// </summary>
     public void Clear()
     {
-        if (m_Instance != null)
+        if (_instance != null)
         {
-            Destroy(m_Instance);
+            Destroy(_instance);
         }
 
-        m_RawImageAim.enabled = true;
-        m_TextDistance.enabled = true;
+        _rawImageAim.enabled = true;
+        _textDistance.enabled = true;
     }
 
+    /// <summary>
+    /// Spawns a character prefab at the target AR location and makes it face the camera.
+    /// </summary>
     public void Place()
     {
-        if (m_CommonData.distance != 0F)
+        // Only allow placement if a valid distance has been measured
+        if (_commonData.distance != 0F)
         {
-            string character = m_DropdownCharacter.options[m_DropdownCharacter.value].text;
+            // Dynamically load prefab based on selected dropdown text
+            string character = _dropdownCharacter.options[_dropdownCharacter.value].text;
             GameObject prefab = Resources.Load<GameObject>(character);
 
-            Transform t = m_CommonData.ARCamera.transform;
+            Transform t = Camera.main.transform;
 
+            // Calculate world position based on camera forward vector and measured distance
             Vector3 cameraPos = t.position;
             Vector3 cameraForward = t.forward;
-            Vector3 hitPoint = cameraPos + cameraForward * m_CommonData.distance;
+            Vector3 hitPoint = cameraPos + cameraForward * _commonData.distance;
             Vector3 p = hitPoint;
 
             Vector3 pos = cameraPos;
@@ -63,62 +80,81 @@ public class DancerManager : MonoBehaviour
             p.y = 0F;
             Vector3 toward = pos - p;
 
-            if (m_Instance != null)
+            // Cleanup existing instance before creating a new one
+            if (_instance != null)
             {
-                m_Animator = null;
-                Destroy(m_Instance);
+                _animator = null;
+                Destroy(_instance);
             }
 
-            m_Instance = Instantiate(prefab, hitPoint, Quaternion.LookRotation(toward.normalized, Vector3.up));
-            m_Instance.transform.localScale = scale;
-            m_Animator = m_Instance.GetComponent<Animator>();
-            if (m_Animator == null)
+            // Instantiate and rotate character to face the camera on the horizontal plane
+            _instance = Instantiate(prefab, hitPoint, Quaternion.LookRotation(toward.normalized, Vector3.up));
+            _instance.transform.localScale = scale;
+            
+            // Retrieve Animator component from the spawned object
+            _animator = _instance.GetComponent<Animator>();
+            if (_animator == null)
             {
-                m_Animator = m_Instance.GetComponentInChildren<Animator>();
+                _animator = _instance.GetComponentInChildren<Animator>();
             }
         }
 
-        m_RawImageAim.enabled = false;
-        m_TextDistance.enabled = false;
+        _rawImageAim.enabled = false;
+        _textDistance.enabled = false;
     }
 
+    /// <summary>
+    /// Updates the scale of the character instance in real-time based on the slider.
+    /// </summary>
     public void ScaleChange()
     {
-        if (m_Instance != null && m_SliderScale != null)
+        if (_instance != null && _sliderScale != null)
         {
-            m_Instance.transform.localScale = scale;
+            _instance.transform.localScale = scale;
         }
     }
 
+    /// <summary>
+    /// Triggers the "Dance" animation on the character.
+    /// </summary>
     public void Dance()
     {
-        if (m_Instance != null)
+        if (_instance != null)
         {
-            m_Animator.SetTrigger("Dance");
+            _animator.SetTrigger("Dance");
         }
     }
 
+    /// <summary>
+    /// Triggers the "Turn" animation on the character.
+    /// </summary>
     public void Turn()
     {
-        if (m_Instance != null)
+        if (_instance != null)
         {
-            m_Animator.SetTrigger("Turn");
+            _animator.SetTrigger("Turn");
         }
     }
 
+    /// <summary>
+    /// Triggers the "Kick" animation on the character.
+    /// </summary>
     public void Kick()
     {
-        if (m_Instance != null)
+        if (_instance != null)
         {
-            m_Animator.SetTrigger("Kick");
+            _animator.SetTrigger("Kick");
         }
     }
 
+    /// <summary>
+    /// Triggers the "Jump" animation on the character.
+    /// </summary>
     public void Jump()
     {
-        if (m_Instance != null)
+        if (_instance != null)
         {
-            m_Animator.SetTrigger("Jump");
+            _animator.SetTrigger("Jump");
         }
     }
 
