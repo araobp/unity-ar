@@ -5,10 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VRTheater.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 2c9bd2054137d418d9b0057a037ffd19,
+      type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 5f7cc0b3d73e944ccaede1e07766590d,
       type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: fa01b5c4aaaf741bab2999ff6e1a92b3,

@@ -7,9 +7,9 @@ Darwin version:          25.3.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        16384 MB
-Date:                    2026-05-02T11:15:44Z
+Date:                    2026-05-04T03:58:51Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-shiny" at "2026-05-02T11:15:44.619793Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-shiny" at "2026-05-04T03:58:51.098632Z"
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/Unity.app/Contents/MacOS/Unity
@@ -23,7 +23,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50896
+55255
 -licensingIpc
 LicenseClient-shiny
 -force-metal
@@ -73,7 +73,7 @@ Successfully changed project path to: /Users/shiny/Documents/GitHub/unity-ar/uni
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
 Player connection [8756982016]  Target information:
 
-Player connection [8756982016]  * "[IP] 192.168.0.171 [Port] 0 [Flags] 2 [Guid] 4013004014 [EditorId] 4013004014 [Version] 1048832 [Id] OSXEditor(0,araoshinyanoMacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8756982016]  * "[IP] 192.168.0.171 [Port] 0 [Flags] 2 [Guid] 1376213807 [EditorId] 1376213807 [Version] 1048832 [Id] OSXEditor(0,araoshinyanoMacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8756982016] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8756982016] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -94,24 +94,24 @@ Library Redirect Path: Library/
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-shiny"
 [Licensing::IpcConnector] LicenseClient-shiny channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-shiny-6000.4.0" at "2026-05-02T11:15:45.330321Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-shiny-6000.4.0" at "2026-05-04T03:58:52.70898Z"
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              e76f1e29eef14f4aac4a0c890362e7c3
-  Correlation Id:          44a37bd701da0b29c3116d337af241a8
-  External correlation Id: 4712123203368884734
+  Session Id:              51204f02a9d740c6a7235202134b4933
+  Correlation Id:          f6fd40f475a14a9400d844368812ba5d
+  External correlation Id: 9004595274395108453
   Machine Id:              cEUd2IGX3mUPoy76UqRmMR9jX7k=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-shiny-6000.4.0" (connect: 0.00s, validation: 0.00s, handshake: 0.60s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-shiny-6000.4.0-notifications" at "2026-05-02T11:15:45.926424Z"
-[Licensing::Module] Licensing Background thread has ended after 1.31s
-[Licensing::Module] Licensing is initialized (took 0.90s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-shiny-6000.4.0" (connect: 0.00s, validation: 0.01s, handshake: 1.49s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-shiny-6000.4.0-notifications" at "2026-05-04T03:58:54.209564Z"
+[Licensing::Module] Licensing Background thread has ended after 3.11s
+[Licensing::Module] Licensing is initialized (took 2.01s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 15668237654568-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-Refreshing native plugins compatible for Editor in 4.05 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 15.82 ms, found 2 plugins.
 Initialize engine version: 6000.4.0f1 (8cf496087c8f)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/shiny/Documents/GitHub/unity-ar/unity/ObjectPlacement/Assets
@@ -132,7 +132,7 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/Unity.app/Contents/Resources/Scripting/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56658
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56742
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -140,13 +140,13 @@ Register platform support module: /Applications/Unity/Hub/Editor/2020.3.3f1/6000
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.004277 seconds.
+Registered in 0.003878 seconds.
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 85 ms
+Android Extension - Scanning For ADB Devices 452 ms
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -154,23 +154,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.451 seconds
-Domain Reload Profiling: 800ms
-	BeginReloadAssembly (96ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (166ms)
-		LoadAssemblies (95ms)
-		AnalyzeDomain (158ms)
-			TypeCache.Refresh (157ms)
-				TypeCache.ScanAssembly (143ms)
-	FinalizeReload (451ms)
+- Finished resetting the current domain, in  1.244 seconds
+Domain Reload Profiling: 2012ms
+	BeginReloadAssembly (165ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (78ms)
+	LoadAllAssembliesAndSetupDomain (441ms)
+		LoadAssemblies (166ms)
+		AnalyzeDomain (422ms)
+			TypeCache.Refresh (421ms)
+				TypeCache.ScanAssembly (399ms)
+	FinalizeReload (1245ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (189ms)
-			BeforeProcessingInitializeOnLoad (71ms)
-			ProcessInitializeOnLoadAttributes (71ms)
-			ProcessInitializeOnLoadMethodAttributes (61ms)
+			InitializePlatformSupportModulesInManaged (690ms)
+			BeforeProcessingInitializeOnLoad (149ms)
+			ProcessInitializeOnLoadAttributes (151ms)
+			ProcessInitializeOnLoadMethodAttributes (122ms)
 [CoreBusinessMetrics] Unexpected thread when updating session info.
 ========================================================================
 Worker process is ready to serve import requests
@@ -250,27 +250,28 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.599 seconds
-Domain Reload Profiling: 1358ms
-	BeginReloadAssembly (109ms)
-		DisableScriptedObjects (3ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (65ms)
-	LoadAllAssembliesAndSetupDomain (543ms)
-		LoadAssemblies (280ms)
-		AnalyzeDomain (310ms)
-			TypeCache.Refresh (243ms)
-				TypeCache.ScanAssembly (221ms)
-			BuildScriptInfoCaches (55ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (599ms)
+- Finished resetting the current domain, in  2.752 seconds
+Domain Reload Profiling: 4055ms
+	BeginReloadAssembly (210ms)
+		DisableScriptedObjects (4ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (61ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (111ms)
+	LoadAllAssembliesAndSetupDomain (906ms)
+		LoadAssemblies (561ms)
+		AnalyzeDomain (434ms)
+			TypeCache.Refresh (326ms)
+				TypeCache.ScanAssembly (283ms)
+			BuildScriptInfoCaches (84ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (2753ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			BeforeProcessingInitializeOnLoad (113ms)
-			ProcessInitializeOnLoadAttributes (203ms)
-			ProcessInitializeOnLoadMethodAttributes (53ms)
+			InitializePlatformSupportModulesInManaged (117ms)
+			BeforeProcessingInitializeOnLoad (306ms)
+			ProcessInitializeOnLoadAttributes (513ms)
+			ProcessInitializeOnLoadMethodAttributes (153ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
 WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -295,377 +296,9 @@ WARNING: Shader If subshaders removal was intentional, you may have forgotten tu
 Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
 Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/Unity.app/Contents/Helpers/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.11 seconds
 Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7264 unused Assets / (6.3 MB). Loaded Objects now: 8068.
-Memory consumption went from 146.8 MB to 140.6 MB.
-Total: 10.574000 ms (FindLiveObjects: 0.502500 ms CreateObjectMapping: 0.331833 ms MarkObjects: 5.837125 ms  DeleteObjects: 3.901459 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 657309.805693 seconds.
-  path: Assets/Models/FZK-Haus/FurnitureLeg.mat
-  importAddress: Guid(013b367d700814a488c39993a9c07f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/FurnitureLeg.mat using Guid(013b367d700814a488c39993a9c07f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '75b2cf60c57acb9e2a7246e717a23521') in 0.297749625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0f59b28ecdc514cddd63696d20d169ea DependenciesID=3df2e6fa3dc712d3f405cce244fc3900 StaticDependenciesID=442b768633330a837fea48ef35b15aa4 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/Models/FZK-Haus/WindowFrame.mat
-  importAddress: Guid(36bde62777c234cf8a080efd15238680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/WindowFrame.mat using Guid(36bde62777c234cf8a080efd15238680) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1b14279549d7332550bc64cc165e74cd') in 0.006277583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2763d5d1aceca159b486898011296320 DependenciesID=619b26987f4d53f19dd3032635e1fa6d StaticDependenciesID=81b92d22ca6541464e81429fd63ebc15 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Models/FZK-Haus/FurnitureMetal.mat
-  importAddress: Guid(13148ef88e371449a9352f7d2220fb34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/FurnitureMetal.mat using Guid(13148ef88e371449a9352f7d2220fb34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '98bdbcff4a980394c3c4b07f988bccc7') in 0.005184291 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d300609f1ce9201b81f4cc0cbe2bc7e5 DependenciesID=4ff81aa28a08bbadf80e67bb14a63576 StaticDependenciesID=331befb5a972c73847f24564a4104e9a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Models/FZK-Haus/FurniturePillar.mat
-  importAddress: Guid(3dc165e1992fc4089b8468ebd70cb595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/FurniturePillar.mat using Guid(3dc165e1992fc4089b8468ebd70cb595) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '288febf6d51ec286e8294af3af65fa32') in 0.005248583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=169085196622aad7d76aec351daf1d84 DependenciesID=6f728839163d5afbf043533233ec2805 StaticDependenciesID=8c44c11782668549e342fca64fb2980f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Models/FZK-Haus/Door.mat
-  importAddress: Guid(e5202f98919c04d2da4c40727b4f6836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/Door.mat using Guid(e5202f98919c04d2da4c40727b4f6836) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'fe4a3047a371c4a3bdbaa651e9a90716') in 0.005383542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6f2ac6c9c9baf44472a5fc85dba6a913 DependenciesID=68a8c950b57b32c019cffd8c8726cf88 StaticDependenciesID=d4266cbc560f83cea8b842a01e568c23 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Models/FZK-Haus/VentirationHood.mat
-  importAddress: Guid(e076420e5b81a48dc8c6d0c7dc646bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/VentirationHood.mat using Guid(e076420e5b81a48dc8c6d0c7dc646bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9c98e2cfbf0c355dfc0fb6d059cf60dd') in 0.005228375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e7295a5f6e641396093f141b930393ea DependenciesID=62df726fdec5881f12a95585975eccf2 StaticDependenciesID=b407c33157accbd5fc418ae1a7ffc593 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Models/FZK-Haus/Seat.mat
-  importAddress: Guid(56512f811b567440cb67b40db4968f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/Seat.mat using Guid(56512f811b567440cb67b40db4968f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9287a307178d49e7384fd138c3300749') in 0.004942083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cd5ec5c569c0f7107bb163e0f79ac786 DependenciesID=7a92c2a0dbd2eb5d2940fdeb7f7bd0b9 StaticDependenciesID=0d2bfabcc14b95a001f01598f5989100 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Models/FZK-Haus/SystemKitchenBody.mat
-  importAddress: Guid(5d067514ab6e2439199e25178ca26d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/SystemKitchenBody.mat using Guid(5d067514ab6e2439199e25178ca26d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '866dec8cd5a4357b0f0e68fafe72d78a') in 0.004972875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d319a2134d258af0dff734ede91ac0a6 DependenciesID=68ca389c54f33c522857bdf224be8142 StaticDependenciesID=526db455695cb21d5486ac02552d8366 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Models/FZK-Haus/Sofa.mat
-  importAddress: Guid(0531a9092b3964d9db9e7632597222f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/Sofa.mat using Guid(0531a9092b3964d9db9e7632597222f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '631ff53b63b871f0456d4785f41d8d3c') in 0.005024291 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f9e98b30cafb97586ffa5044bec34afd DependenciesID=6930fb8bb26cd489ffa7be790f8b5291 StaticDependenciesID=a02ae7b71f1665d3218b44fed6c8a253 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Models/FZK-Haus/SystemKitchenBoard.mat
-  importAddress: Guid(5a0215fa3c85343198606b747cb253a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/SystemKitchenBoard.mat using Guid(5a0215fa3c85343198606b747cb253a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2f237e85eee90282150621df607f12ba') in 0.114177292 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=72ea6b5977682af064fa210417fd97f2 DependenciesID=e2a9ad00beffd83720470f868beec21f StaticDependenciesID=1eec218c8002580c6752b5e598d671f0 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Models/FZK-Haus/Leg.mat
-  importAddress: Guid(de39ba1689ec94fa38df282e3fc5673e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/Leg.mat using Guid(de39ba1689ec94fa38df282e3fc5673e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'cfdc18673972bc3e39b31d8adeda2484') in 0.005141667 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0032c5b8b0db13a99171831e792cd2b1 DependenciesID=b04b7cbb48e01762c2260429f8c6f1b5 StaticDependenciesID=a375ede865c758b58decf09ad590373a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Models/FZK-Haus/Roof.mat
-  importAddress: Guid(0fcf0c4b380f348c4a5aa58e57696e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/Roof.mat using Guid(0fcf0c4b380f348c4a5aa58e57696e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b0f774242c1bf566d725d0bae2def7b8') in 0.00587625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bb426c59dc708dbbf43b4ce812ff09c4 DependenciesID=5608e56f56ae3c454725a48f941ceeca StaticDependenciesID=d1b186af828178ed5e5a562991b7f65f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Models/FZK-Haus/SystemKitchenBoardSide.mat
-  importAddress: Guid(f9aa413cbe4dc4722be2f1ed4ab480bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/SystemKitchenBoardSide.mat using Guid(f9aa413cbe4dc4722be2f1ed4ab480bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '817c4c8eb1d7a57a9849d22b5ec6c361') in 0.004752667 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=28c9106fd7ee261790f3008412084654 DependenciesID=eaa0318b989b9af867004cda851f5e8b StaticDependenciesID=d770e53738386c95a0c25ba1a661616d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/Models/FZK-Haus/WallKitchen.mat
-  importAddress: Guid(b32fac466e8574255bc9c1a648c7484f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/WallKitchen.mat using Guid(b32fac466e8574255bc9c1a648c7484f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'dc735a39f2e4e103024f8c1d8d7cd234') in 0.006503917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=419a933002b53d328c56ff787ea76692 DependenciesID=9ad4a24dde32cf8d0042c0eb21e34c66 StaticDependenciesID=7739ab1403a2a4639d551aedcdd6c46e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/Models/FZK-Haus/Pillar.mat
-  importAddress: Guid(7c9b171eea1e641bcaf3aca3b0713ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/Pillar.mat using Guid(7c9b171eea1e641bcaf3aca3b0713ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '89e6337dba549b8e339847cb3471ee25') in 0.006452584 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=05f0164e76b38d631af573ee3946c803 DependenciesID=fb7974e2e6f6f0c080f5736f8a06093d StaticDependenciesID=2d0b3e632cfe270e7b589f840cdd846a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000070 seconds.
-  path: Assets/Models/FZK-Haus/FZK-Haus.fbx
-  importAddress: Guid(b3d2beb2e56e143a993487c1563d94f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/FZK-Haus.fbx using Guid(b3d2beb2e56e143a993487c1563d94f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)xcrun: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find metal-objdump 2> /dev/null' failed with exit code 17664: (null) (errno=Invalid argument)
-xcrun: error: unable to find utility "metal-objdump", not a developer tool or in PATH
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
- -> (Import Result ID: '9ca319f3213b47a6a651c39c62d745e0') in 2.722922166 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8125cab2f7f6066b5bf41fa34c2efd3a DependenciesID=5381d93cc349812beff4dbf29415f2bf StaticDependenciesID=058166741ad03c1beb7cebc997bdaa53 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 752
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x1740c7000 may have been prematurely finalized
-Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
-Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
-Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
-Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARCore.CodeSamples.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARCore.CodeSamples.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARCore.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARCore.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARCore.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARCore.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARFoundation.CodeSamples.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARFoundation.CodeSamples.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARFoundation.CodeSamples.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARFoundation.CodeSamples.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARFoundation.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARFoundation.InternalUtils.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARFoundation.InternalUtils.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARFoundation.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARFoundation.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARKit.CodeSamples.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARKit.CodeSamples.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARKit.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARKit.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARKit.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARKit.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARSubsystems.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.CoreUtils.CodeSamples.Tests.dll at Library/ScriptAssemblies/Unity.XR.CoreUtils.CodeSamples.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.CoreUtils.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.CoreUtils.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.CoreUtils.Tests.dll at Library/ScriptAssemblies/Unity.XR.CoreUtils.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.Management.EditorTests.dll at Library/ScriptAssemblies/Unity.XR.Management.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.Management.TestPackage.dll at Library/ScriptAssemblies/Unity.XR.Management.TestPackage.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.Management.TestPackage.Editor.dll at Library/ScriptAssemblies/Unity.XR.Management.TestPackage.Editor.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.Management.Tests.dll at Library/ScriptAssemblies/Unity.XR.Management.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.Management.Tests.Standalone.dll at Library/ScriptAssemblies/Unity.XR.Management.Tests.Standalone.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.Simulation.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.Simulation.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.Simulation.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.XR.Simulation.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.TestSupport.dll at Library/ScriptAssemblies/Unity.XR.TestSupport.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.TestTooling.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.TestTooling.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.XR.LegacyInputHelpers.Tests.dll at Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEngine.SpatialTracking.Tests.dll at Library/ScriptAssemblies/UnityEngine.SpatialTracking.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.542 seconds
-Domain Reload Profiling: 1201ms
-	BeginReloadAssembly (200ms)
-		DisableScriptedObjects (33ms)
-		CreateAndSetChildDomain (64ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (385ms)
-		LoadAssemblies (256ms)
-		AnalyzeDomain (170ms)
-			TypeCache.Refresh (11ms)
-			BuildScriptInfoCaches (148ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (542ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			BeforeProcessingInitializeOnLoad (116ms)
-			ProcessInitializeOnLoadAttributes (189ms)
-			ProcessInitializeOnLoadMethodAttributes (58ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
-Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
-Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7263 unused Assets / (7.5 MB). Loaded Objects now: 8151.
-Memory consumption went from 167.3 MB to 159.8 MB.
-Total: 9.430042 ms (FindLiveObjects: 0.435833 ms CreateObjectMapping: 0.271000 ms MarkObjects: 5.029167 ms  DeleteObjects: 3.693542 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-EnvironmentDependencyValues requested are different than current active one (requested -> active):
-  graphicsApiMask: 2099200 -> 2164736
-========================================================================
-Received Import Request.
-  Time since last request: 86.996790 seconds.
-  path: Assets/Models/Marker
-  importAddress: Guid(af2b863b507874a69a887c7277960fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Marker using Guid(af2b863b507874a69a887c7277960fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c0c9633542e94d5c893fa05692f9d187') in 0.002485666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=41335dc5a604d380386ea93620ceedbb DependenciesID=a79cccb217ddbd0beebfa7b8c2e36451 StaticDependenciesID=200f73ee38a0cfc5de99773a0e9f3c89 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Models/Marker/Marker.mat
-  importAddress: Guid(755ac9037818a436eae927458d4832f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Marker/Marker.mat using Guid(755ac9037818a436eae927458d4832f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e4131eec45f84e2d0a01bea0762a5dbf') in 0.258123292 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b59744d9a8679505b1623aa49d96c446 DependenciesID=fa9e7f2a64f83a915ca7de36348c5750 StaticDependenciesID=858057f54119701037ccce7832318e39 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.947407 seconds.
-  path: Assets/Models/AzumaHouse
-  importAddress: Guid(91666ce631cf94531a337d0bfd3fecfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse using Guid(91666ce631cf94531a337d0bfd3fecfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '10e8519b96eda03d5977191a6062085a') in 0.000411334 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7f08ebeb055d8e0878ff689eaedf1af8 DependenciesID=32087450d870ed2c6653a2d96f67a5b7 StaticDependenciesID=16eed0b0cab50336eccc3ef9b4d68143 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.063077 seconds.
-  path: Assets/Models/AzumaHouse/AzumaHouse.fbx
-  importAddress: Guid(9b8d850e2d6f140029d58b8cba2def6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/AzumaHouse.fbx using Guid(9b8d850e2d6f140029d58b8cba2def6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
- -> (Import Result ID: '149c00b0f6bcd56835155210bd9e9da7') in 2.781110958 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=12587070450824c45de5243a3529d14a DependenciesID=c7aedc6f634d1475c31b1578bf2569b3 StaticDependenciesID=d3d67516d8a061db1ef69c81be681a80 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 982
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000079 seconds.
-  path: Assets/Models/AzumaHouse/WoodFloor007_1K-JPG_Roughness.jpg
-  importAddress: Guid(36b63b5f2114c418d854a6ff3eb382dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/WoodFloor007_1K-JPG_Roughness.jpg using Guid(36b63b5f2114c418d854a6ff3eb382dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Client] Successfully resolved entitlement details
- -> (Import Result ID: 'e3c487253df279d41cfa373d7ec03801') in 0.013040833 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0bff941069a02d5da04b0667cf661251 DependenciesID=31ea43cfb0225f70944b93ee513939cb StaticDependenciesID=23cfe48ce5a20fdb3f2c8c6b3b6d84dc 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Models/AzumaHouse/WoodFloor007_1K-JPG_NormalGL.jpg
-  importAddress: Guid(a5d668f557554483fa6fdf8fddf0594f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/WoodFloor007_1K-JPG_NormalGL.jpg using Guid(a5d668f557554483fa6fdf8fddf0594f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd0cc8ab26553ec6acdd40d2b0e8e9abf') in 0.040460084 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a697c548c0e30ed2065f7026d92cee60 DependenciesID=35611a6a539b32c30d314a963069830d StaticDependenciesID=800ae721967ac80c7dc3dcddeaa27e32 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000079 seconds.
-  path: Assets/Models/AzumaHouse/Closet.mat
-  importAddress: Guid(028f72fdffc36411dbae084e42d48734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Closet.mat using Guid(028f72fdffc36411dbae084e42d48734) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9b5789dd38fc4c6f13ccccdcf597385f') in 0.006394625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a35f26549192e8451821c4cf675a67b8 DependenciesID=c740a48f310adeec5c62d1ebacecfe03 StaticDependenciesID=34cfa848db876b1fa08277867a444cdf 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/Models/AzumaHouse/Carpet013_1K-JPG_Roughness.jpg
-  importAddress: Guid(c988abb1ff8624cd6abfda0647d04902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Carpet013_1K-JPG_Roughness.jpg using Guid(c988abb1ff8624cd6abfda0647d04902) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a658bbb31d658aa291c0821f1b3e0502') in 0.004879125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=845d76ce341e47cedb69b983bc684123 DependenciesID=d809a9909f91d81e4d25550fa6e56e59 StaticDependenciesID=7182f4fef557192a3e0b9490382f50bd 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Models/AzumaHouse/Peinture - Blanc titanium.mat
-  importAddress: Guid(88b6f515572544bd0afd9971aa7f83a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Peinture - Blanc titanium.mat using Guid(88b6f515572544bd0afd9971aa7f83a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '116de205d254dc37265883322fc66b81') in 0.004951333 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ce3d84e88a9baeffbb4ac4f7c8c56bef DependenciesID=4078e578b92edd37618f187b374172a2 StaticDependenciesID=4b8cf09dc77215214050e5f8984810b5 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Models/AzumaHouse/Marble012_1K-JPG_Roughness.jpg
-  importAddress: Guid(672a481f3a984458a8026303ac0b42e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Marble012_1K-JPG_Roughness.jpg using Guid(672a481f3a984458a8026303ac0b42e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '356440c464bfe503d9ea9f4aaccecea3') in 0.00504425 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dc1abb9bfb1017a64c8c54e5ee5f2b02 DependenciesID=c696bdbcd4b1ad7ec11149014b56cc25 StaticDependenciesID=265874eea1e7060480f626a4b5ccc0c6 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Models/AzumaHouse/Carpet013_1K-JPG_Color.jpg
-  importAddress: Guid(2ecfc769292e849538cca313c40c4c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Carpet013_1K-JPG_Color.jpg using Guid(2ecfc769292e849538cca313c40c4c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ceaef71699a254fcde490be8acf4c276') in 0.004848584 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0d252b64e8074239c25edf2f986e49b3 DependenciesID=ff14c32be497ff8ead90ea8a10c31969 StaticDependenciesID=08d5d95469960dfc56f4d09bb7faf5a7 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/Models/AzumaHouse/Peinture - Bleu royal.mat
-  importAddress: Guid(21a8e786363954356b185ae2b6366ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Peinture - Bleu royal.mat using Guid(21a8e786363954356b185ae2b6366ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '05b05aaf28683cf98ba17e995177946d') in 0.004926375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ad1e3563ed2b19cd5dc0c3fe7dab1f96 DependenciesID=72cce51f0daaede595bb466992ea13a6 StaticDependenciesID=18eaa4798654e79fd36c239cb92cfcb0 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+Unloading 7264 unused Assets / (4.8 MB). Loaded Objects now: 8069.
+Memory consumption went from 146.9 MB to 142.1 MB.
+Total: 36.729708 ms (FindLiveObjects: 5.606958 ms CreateObjectMapping: 1.726084 ms MarkObjects: 19.595250 ms  DeleteObjects: 9.800666 ms)
 

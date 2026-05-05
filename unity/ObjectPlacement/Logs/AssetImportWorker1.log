@@ -1,3 +1,5 @@
+database is locked
+[CoreBusinessMetrics] Unable to lock db rows in cache. SQLite returned error message "disk I/O error"
 Unity Editor version:    6000.4.0f1 (8cf496087c8f)
 Branch:                  6000.4/staging
 Build type:              Release
@@ -7,9 +9,9 @@ Darwin version:          25.3.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        16384 MB
-Date:                    2026-05-02T11:15:44Z
+Date:                    2026-05-04T03:58:51Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-shiny" at "2026-05-02T11:15:44.620036Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-shiny" at "2026-05-04T03:58:51.098415Z"
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/Unity.app/Contents/MacOS/Unity
@@ -23,7 +25,7 @@ AssetImportWorker1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-50896
+55255
 -licensingIpc
 LicenseClient-shiny
 -force-metal
@@ -73,7 +75,7 @@ Successfully changed project path to: /Users/shiny/Documents/GitHub/unity-ar/uni
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
 Player connection [8756982016]  Target information:
 
-Player connection [8756982016]  * "[IP] 192.168.0.171 [Port] 0 [Flags] 2 [Guid] 358591392 [EditorId] 358591392 [Version] 1048832 [Id] OSXEditor(0,araoshinyanoMacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8756982016]  * "[IP] 192.168.0.171 [Port] 0 [Flags] 2 [Guid] 2597512786 [EditorId] 2597512786 [Version] 1048832 [Id] OSXEditor(0,araoshinyanoMacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8756982016] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8756982016] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -94,24 +96,24 @@ Library Redirect Path: Library/
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-shiny"
 [Licensing::IpcConnector] LicenseClient-shiny channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-shiny-6000.4.0" at "2026-05-02T11:15:45.324526Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-shiny-6000.4.0" at "2026-05-04T03:58:52.742321Z"
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              242bb3c18c804365b88c85d8c90d8be2
-  Correlation Id:          44a37bd701da0b29c3116d337af241a8
-  External correlation Id: 4016182060457780987
+  Session Id:              6ec2ec90fc684d7abcaeb0c3b59bcca9
+  Correlation Id:          f6fd40f475a14a9400d844368812ba5d
+  External correlation Id: 8357392894311429797
   Machine Id:              cEUd2IGX3mUPoy76UqRmMR9jX7k=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-shiny-6000.4.0" (connect: 0.00s, validation: 0.00s, handshake: 0.60s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-shiny-6000.4.0-notifications" at "2026-05-02T11:15:45.923494Z"
-[Licensing::Module] Licensing Background thread has ended after 1.30s
-[Licensing::Module] Licensing is initialized (took 0.90s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-shiny-6000.4.0" (connect: 0.00s, validation: 0.00s, handshake: 1.48s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-shiny-6000.4.0-notifications" at "2026-05-04T03:58:54.226938Z"
+[Licensing::Module] Licensing Background thread has ended after 3.13s
+[Licensing::Module] Licensing is initialized (took 1.90s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 15668237654568-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-Refreshing native plugins compatible for Editor in 6.64 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 8.57 ms, found 2 plugins.
 Initialize engine version: 6000.4.0f1 (8cf496087c8f)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/shiny/Documents/GitHub/unity-ar/unity/ObjectPlacement/Assets
@@ -132,7 +134,7 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/Unity.app/Contents/Resources/Scripting/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56660
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56744
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -140,13 +142,13 @@ Register platform support module: /Applications/Unity/Hub/Editor/2020.3.3f1/6000
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.003241 seconds.
+Registered in 0.011322 seconds.
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 85 ms
+Android Extension - Scanning For ADB Devices 457 ms
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -154,25 +156,25 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.451 seconds
-Domain Reload Profiling: 800ms
-	BeginReloadAssembly (96ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (167ms)
-		LoadAssemblies (96ms)
-		AnalyzeDomain (158ms)
-			TypeCache.Refresh (157ms)
-				TypeCache.ScanAssembly (143ms)
-	FinalizeReload (451ms)
+- Finished resetting the current domain, in  1.227 seconds
+Domain Reload Profiling: 1997ms
+	BeginReloadAssembly (164ms)
+	RebuildCommonClasses (61ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (106ms)
+	LoadAllAssembliesAndSetupDomain (412ms)
+		LoadAssemblies (162ms)
+		AnalyzeDomain (400ms)
+			TypeCache.Refresh (398ms)
+				TypeCache.ScanAssembly (370ms)
+	FinalizeReload (1228ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (188ms)
-			BeforeProcessingInitializeOnLoad (72ms)
-			ProcessInitializeOnLoadAttributes (73ms)
-			ProcessInitializeOnLoadMethodAttributes (60ms)
+			InitializePlatformSupportModulesInManaged (692ms)
+			BeforeProcessingInitializeOnLoad (130ms)
+			ProcessInitializeOnLoadAttributes (163ms)
+			ProcessInitializeOnLoadMethodAttributes (119ms)
 [CoreBusinessMetrics] Unexpected thread when updating session info.
-========================================================================
+[CoreBusinessMetrics] Failed to get row count. SQLite returned error message "disk I/O error"========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
@@ -250,27 +252,28 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.597 seconds
-Domain Reload Profiling: 1355ms
-	BeginReloadAssembly (111ms)
-		DisableScriptedObjects (3ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (64ms)
-	LoadAllAssembliesAndSetupDomain (542ms)
-		LoadAssemblies (282ms)
-		AnalyzeDomain (309ms)
-			TypeCache.Refresh (242ms)
-				TypeCache.ScanAssembly (221ms)
-			BuildScriptInfoCaches (55ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (597ms)
+- Finished resetting the current domain, in  2.669 seconds
+Domain Reload Profiling: 3986ms
+	BeginReloadAssembly (227ms)
+		DisableScriptedObjects (10ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (83ms)
+	LoadAllAssembliesAndSetupDomain (924ms)
+		LoadAssemblies (562ms)
+		AnalyzeDomain (449ms)
+			TypeCache.Refresh (318ms)
+				TypeCache.ScanAssembly (274ms)
+			BuildScriptInfoCaches (108ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (2670ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			BeforeProcessingInitializeOnLoad (113ms)
-			ProcessInitializeOnLoadAttributes (203ms)
-			ProcessInitializeOnLoadMethodAttributes (52ms)
+			InitializePlatformSupportModulesInManaged (101ms)
+			BeforeProcessingInitializeOnLoad (281ms)
+			ProcessInitializeOnLoadAttributes (496ms)
+			ProcessInitializeOnLoadMethodAttributes (125ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
 WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -295,627 +298,20 @@ WARNING: Shader If subshaders removal was intentional, you may have forgotten tu
 Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
 Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.3f1/6000.4.0f1/Unity.app/Contents/Helpers/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.11 seconds
+Refreshing native plugins compatible for Editor in 3.05 ms, found 2 plugins.
 Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7264 unused Assets / (6.1 MB). Loaded Objects now: 8068.
-Memory consumption went from 146.8 MB to 140.7 MB.
-Total: 10.153375 ms (FindLiveObjects: 0.516458 ms CreateObjectMapping: 0.287542 ms MarkObjects: 6.326333 ms  DeleteObjects: 3.022625 ms)
+Unloading 7264 unused Assets / (5.0 MB). Loaded Objects now: 8069.
+Memory consumption went from 147.1 MB to 142.1 MB.
+Total: 41.348791 ms (FindLiveObjects: 6.254958 ms CreateObjectMapping: 2.229416 ms MarkObjects: 23.496292 ms  DeleteObjects: 9.366375 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 657309.259701 seconds.
-  path: Assets/Models/FZK-Haus/Glass.mat
-  importAddress: Guid(6f5dbf67ebf4d4d10b2e0048b8536e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/Glass.mat using Guid(6f5dbf67ebf4d4d10b2e0048b8536e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)xcrun: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find metal-objdump 2> /dev/null' failed with exit code 17664: (null) (errno=Invalid argument)
-xcrun: error: unable to find utility "metal-objdump", not a developer tool or in PATH
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
- -> (Import Result ID: '6542ea6e6b7b6328f852ddf64ea8ee11') in 1.709101792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=852ef026db5f425c03929e0671ed62da DependenciesID=637494bea74e5b3266a3c5842ab39465 StaticDependenciesID=1d1ebbd2ab691b0ac3bbe1176bf8c198 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000087 seconds.
-  path: Assets/Models/FZK-Haus/RoofBase.mat
-  importAddress: Guid(372ee7e53761644ea8d48052acbe11c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/RoofBase.mat using Guid(372ee7e53761644ea8d48052acbe11c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'cf51985bcbef64541dc0c569bf42d2e0') in 0.022361458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=87b17418dd853e49f563eb44f3a37692 DependenciesID=8a63d71b341a36ddf87635c83c8c016b StaticDependenciesID=bb65602b29a3a295a8289f5319020c9d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000095 seconds.
-  path: Assets/Models/FZK-Haus/Wall.mat
-  importAddress: Guid(000610d0a4fc94f6fab4a6d8bc5041ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/Wall.mat using Guid(000610d0a4fc94f6fab4a6d8bc5041ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd2c38a72690825ea88f16c2306a2ec65') in 0.00545725 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=58c16e469d66563a2cf1f077b890aab2 DependenciesID=53bbb29108136dcd52e982a9d52b54a3 StaticDependenciesID=c83fb305cde5f43300261d90ac6a8833 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000083 seconds.
-  path: Assets/Models/FZK-Haus/Ground.mat
-  importAddress: Guid(e01c2dc7c34f44780923157e3fec9372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/Ground.mat using Guid(e01c2dc7c34f44780923157e3fec9372) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '90b1dcbc60234ed14a3f4a19caaae0f7') in 0.132789291 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d8a08f4eec51c24b321028c6fe078751 DependenciesID=afd9e6786b7be1f0bef89a9f9bb4c52b StaticDependenciesID=d83423ef4855dc2dbd2c8ad9f036ca98 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/Models/FZK-Haus/Floor2.mat
-  importAddress: Guid(33c316bf7965443898ada7c1e8303c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/Floor2.mat using Guid(33c316bf7965443898ada7c1e8303c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b577fbcbc895fdba3dfea64f9471f0b1') in 0.008076416 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c7ee1af3f164a8b6039ace5a90954a57 DependenciesID=26e5c7a8b38c5f1099b0d67a20ff6601 StaticDependenciesID=3c99b54a332c148f32fec3643791495a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Models/FZK-Haus/KeyWhite.mat
-  importAddress: Guid(99b735401b873422cbd73b610905cc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/KeyWhite.mat using Guid(99b735401b873422cbd73b610905cc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1520f048db6f289b1270aefd26da86f4') in 0.006904291 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6f4658210f6a516d8bf6dfa4b7896286 DependenciesID=6e455f66c203ff7e4e3c75f7e7beccb0 StaticDependenciesID=c9f85ab75e4ca2351eaf2820ef684cfb 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Models/FZK-Haus/Metal.mat
-  importAddress: Guid(b37182c6b19d6437da8509efd91fdd12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/Metal.mat using Guid(b37182c6b19d6437da8509efd91fdd12) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'dfbbf7cae84237ced91d8aedc7803e6a') in 0.006910709 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=453fbb87ad886441ad4dce68cf4aeb9f DependenciesID=4a7449b8dc9c76a481349dffe8598a8e StaticDependenciesID=41ef1c42aadab063a6a4f5f8446424f8 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/Models/FZK-Haus/DoorKnob.mat
-  importAddress: Guid(b71894ebe7d204ac5b8904f45bd414ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/DoorKnob.mat using Guid(b71894ebe7d204ac5b8904f45bd414ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2cbae0aefd7513de94b43d8cd1eb2b98') in 0.006153208 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bdccf33e9d23e76c1edf153953fd3864 DependenciesID=21fb1336e2dc8fa393d3c08607c72c8a StaticDependenciesID=7b96069a583644de28ecfd81fb35e08c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Assets/Models/FZK-Haus/Floor.mat
-  importAddress: Guid(3fb7498af90454ea8bb0224bad029718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/Floor.mat using Guid(3fb7498af90454ea8bb0224bad029718) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '38055ca2d4ba2d7126397edcdf7a6aa6') in 0.019565833 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=908d8a536d128d5dba40654ec2d05c79 DependenciesID=3dda7b60a16fd34f5fb7f1c9b91b7348 StaticDependenciesID=0862765d0728c8775d15a2cdcf31b099 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000075 seconds.
-  path: Assets/Models/FZK-Haus/PianoBody.mat
-  importAddress: Guid(a6fe080430a1d4ff3838e80de88bd3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/FZK-Haus/PianoBody.mat using Guid(a6fe080430a1d4ff3838e80de88bd3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3ff7627cb06f47fc3d6e4897dcd7d6b0') in 0.005977167 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2e4d4400c2ecd360bd11ccd477c07dce DependenciesID=096588adf67412e8029a7de9b5c90f7a StaticDependenciesID=e1e5c3e52b57e0d52e1eaf3c62b01eae 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x175823000 may have been prematurely finalized
-Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
-Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
-Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
-Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARCore.CodeSamples.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARCore.CodeSamples.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARCore.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARCore.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARCore.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARCore.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARFoundation.CodeSamples.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARFoundation.CodeSamples.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARFoundation.CodeSamples.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARFoundation.CodeSamples.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARFoundation.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARFoundation.InternalUtils.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARFoundation.InternalUtils.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARFoundation.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARFoundation.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARKit.CodeSamples.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARKit.CodeSamples.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARKit.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARKit.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARKit.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARKit.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.ARSubsystems.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.CoreUtils.CodeSamples.Tests.dll at Library/ScriptAssemblies/Unity.XR.CoreUtils.CodeSamples.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.CoreUtils.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.CoreUtils.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.CoreUtils.Tests.dll at Library/ScriptAssemblies/Unity.XR.CoreUtils.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.Management.EditorTests.dll at Library/ScriptAssemblies/Unity.XR.Management.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.Management.TestPackage.dll at Library/ScriptAssemblies/Unity.XR.Management.TestPackage.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.Management.TestPackage.Editor.dll at Library/ScriptAssemblies/Unity.XR.Management.TestPackage.Editor.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.Management.Tests.dll at Library/ScriptAssemblies/Unity.XR.Management.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.Management.Tests.Standalone.dll at Library/ScriptAssemblies/Unity.XR.Management.Tests.Standalone.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.Simulation.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.Simulation.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.Simulation.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.XR.Simulation.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.TestSupport.dll at Library/ScriptAssemblies/Unity.XR.TestSupport.dll not valid. Loading of assembly skipped.
-Assembly Unity.XR.TestTooling.Editor.Tests.dll at Library/ScriptAssemblies/Unity.XR.TestTooling.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.XR.LegacyInputHelpers.Tests.dll at Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEngine.SpatialTracking.Tests.dll at Library/ScriptAssemblies/UnityEngine.SpatialTracking.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.535 seconds
-Domain Reload Profiling: 1207ms
-	BeginReloadAssembly (198ms)
-		DisableScriptedObjects (33ms)
-		CreateAndSetChildDomain (60ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (401ms)
-		LoadAssemblies (283ms)
-		AnalyzeDomain (162ms)
-			TypeCache.Refresh (10ms)
-			BuildScriptInfoCaches (140ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (535ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			BeforeProcessingInitializeOnLoad (118ms)
-			ProcessInitializeOnLoadAttributes (188ms)
-			ProcessInitializeOnLoadMethodAttributes (59ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
-Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
-Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7263 unused Assets / (7.5 MB). Loaded Objects now: 8148.
-Memory consumption went from 167.8 MB to 160.3 MB.
-Total: 9.585917 ms (FindLiveObjects: 0.469834 ms CreateObjectMapping: 0.271250 ms MarkObjects: 4.963000 ms  DeleteObjects: 3.881208 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-EnvironmentDependencyValues requested are different than current active one (requested -> active):
-  graphicsApiMask: 2099200 -> 2164736
-========================================================================
-Received Import Request.
-  Time since last request: 88.996556 seconds.
-  path: Assets/Models/Marker/Marker.prefab
-  importAddress: Guid(19bb7c2178b574de4a8505d86e80d1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Marker/Marker.prefab using Guid(19bb7c2178b574de4a8505d86e80d1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ec8d054e468530d782f6cb6f5fd26c35') in 0.273378375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=32aea6487dbd11c1f2a2fbdd77f8bb05 DependenciesID=44ea1915f68826b0ac9c4595a764668e StaticDependenciesID=6c7fcb61bc4ef611e9a01f83e0e41f20 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.089340 seconds.
-  path: Assets/Models/AzumaHouse/Bois - Pin granuleux horizontal.mat
-  importAddress: Guid(0b9f5be3f18f0492695dcdb775b4667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Bois - Pin granuleux horizontal.mat using Guid(0b9f5be3f18f0492695dcdb775b4667e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd4260e7e63549ed22943273a9f9086d2') in 0.013866125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8c5ea616117b3a4ad425fb05b88250d4 DependenciesID=b3044983f30f7b3d95c58ebed12d5f85 StaticDependenciesID=5e5be3f68a6d00673e558827aa636ead 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Models/AzumaHouse/Desk2.mat
-  importAddress: Guid(e19ec0ee993a2408eaf1572108536c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Desk2.mat using Guid(e19ec0ee993a2408eaf1572108536c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ff1dd45e9722925793ffd57f879ceb59') in 0.005374584 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5522665765a7e6c0e45a351301d2de55 DependenciesID=0582632f16c71ad7dc101de7fbcf450d StaticDependenciesID=7355c09369e6145544a1d905fd0f2867 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Models/AzumaHouse/Paint - Anthracite.mat
-  importAddress: Guid(65ec2fa08dfa54427bad10361bae7bc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Paint - Anthracite.mat using Guid(65ec2fa08dfa54427bad10361bae7bc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'bd9604445405c59706c2a877eaa1c31b') in 0.005617125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bf14579655b932c884cb0008125dc7ca DependenciesID=a4c98d1f11de0975ddaefc78a937e3bf StaticDependenciesID=029c4de06d4e08d890f3e0ac93e3a744 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Models/AzumaHouse/Peinture - Bleu cobalt.mat
-  importAddress: Guid(b1ffb5fee67df46a18ced18f1c9eb3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Peinture - Bleu cobalt.mat using Guid(b1ffb5fee67df46a18ced18f1c9eb3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4b630f5fc44925e6eed4828c5c666f90') in 0.006287 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d2134ffcabe003cb2c5830a71345b47b DependenciesID=cf40ec2eb167ceabb09c8b82a66eccfd StaticDependenciesID=156a80b9496f69bbd1f53563f496eb17 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/Models/AzumaHouse/LightCable.mat
-  importAddress: Guid(95b30074d791a40a495953904f611241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/LightCable.mat using Guid(95b30074d791a40a495953904f611241) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '373b26e155b159d9dc578162bddc1b0a') in 0.005333875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7d5eb0a410e975b0b6be38867996ec69 DependenciesID=a1f1f230b0704dbd8e0af313db8da92f StaticDependenciesID=da21230415cfc00ebacd65747ca7c8b6 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Models/AzumaHouse/Marble001_1K-JPG_Color.jpg
-  importAddress: Guid(bedb85b91eaa4446f83ba710d590adfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Marble001_1K-JPG_Color.jpg using Guid(bedb85b91eaa4446f83ba710d590adfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Client] Successfully resolved entitlement details
- -> (Import Result ID: '6f5a9103dced33201928a2fbf395659d') in 0.015578542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=09ea7f741669ca8568cf1cc47c8269c3 DependenciesID=6f70ba5a09f1714b80f276a08dc76825 StaticDependenciesID=13d884a269841405be5e7db715d96a8d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Models/AzumaHouse/Mirror.mat
-  importAddress: Guid(dc8d67e53790e4614b6ae648bfce9e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Mirror.mat using Guid(dc8d67e53790e4614b6ae648bfce9e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f096acade60d604d34ab250f33c475ef') in 0.005335542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8ebeea124a42e60cb58b40d8b1eb4f92 DependenciesID=11b6cb823a27bc44fe4bd36aac83276a StaticDependenciesID=3fbd2058f42eca4f649400bc6f286d80 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Models/AzumaHouse/Light.001.mat
-  importAddress: Guid(7150281b1b5a34450b848c22008a69ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Light.001.mat using Guid(7150281b1b5a34450b848c22008a69ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
- -> (Import Result ID: '7cf7b8f70c3c664117f8e6b1934396d1') in 0.311554709 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a2c0c14e5111d70ba8d750c164f64c33 DependenciesID=e191f5971efee69595c763f05b84b33c StaticDependenciesID=ffb9860ac71403e669d9292c2d94b8e6 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Models/AzumaHouse/Peinture-01.mat
-  importAddress: Guid(bada4d3ef27b444d1949dccb9188f51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Peinture-01.mat using Guid(bada4d3ef27b444d1949dccb9188f51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
-error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
- -> (Import Result ID: '9b80e4e2dbd1229676926d20c9783fda') in 0.634933958 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=56edf099ca0da1b494e548d87289d9ee DependenciesID=5a4fd81060d233bc9bba0adea0950a27 StaticDependenciesID=8fe9d27be037462a51b2a96de4e50819 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Models/AzumaHouse/Carpet013_1K-JPG_NormalGL.jpg
-  importAddress: Guid(681e441b720ce4486902ac2da7f84b29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Carpet013_1K-JPG_NormalGL.jpg using Guid(681e441b720ce4486902ac2da7f84b29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f48fa475c4bd06cb24170e9d4d6cb6a6') in 0.020113625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f42f923ab3f69770144a23aa580fa0ba DependenciesID=d148a65a13a6f83b2af75e671eab783d StaticDependenciesID=1e10194e7a3349c2375624e92e96aef1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Models/AzumaHouse/Glass.mat
-  importAddress: Guid(423fa2163d9b947c194ef121b86b08fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Glass.mat using Guid(423fa2163d9b947c194ef121b86b08fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
- -> (Import Result ID: '0afb65974bfa88c08d815263edb18b06') in 0.302635 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=97fd68ad44ebd5ebbb873b4220d0f9ca DependenciesID=25f6c41825fcfb59051bd394d5037a64 StaticDependenciesID=f999f65c4d220f21a0e2c6b3f41bc184 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/Models/AzumaHouse/LightBodyInside.mat
-  importAddress: Guid(e891a933d98594ace956bca35f44f54a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/LightBodyInside.mat using Guid(e891a933d98594ace956bca35f44f54a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '86bd4e7c0f87308b700c2d790e76d5f3') in 0.004712292 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=efa60d838fe3a0641b1fba843d548fda DependenciesID=a04f1bc4ff22fd9eaadc58a7e8491020 StaticDependenciesID=fcd0a4d621fbbd061614e4cb53ddbc59 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000099 seconds.
-  path: Assets/Models/AzumaHouse/TileFloor.001.mat
-  importAddress: Guid(237f0f955d5514fd591410bde1a5a004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/TileFloor.001.mat using Guid(237f0f955d5514fd591410bde1a5a004) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'efdd163d171d373171d740807679c4d5') in 0.007554416 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=14919a3796b0136ed9d06697e5aa1e93 DependenciesID=cfd67468c6e73ee4521490571210ebc1 StaticDependenciesID=43ef6e1ea469d21e53a8da008188939e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Models/AzumaHouse/Wood067_1K-JPG_NormalGL.jpg
-  importAddress: Guid(592b9772601ea4d3a9ed7be5a4f90d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Wood067_1K-JPG_NormalGL.jpg using Guid(592b9772601ea4d3a9ed7be5a4f90d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '228e7d9b36b0357b48e9861ae9957174') in 0.00472525 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b9b473b0c058b9cd8f15670ccefb69cd DependenciesID=d65d6e0577711a408c64d7a3940c5ed7 StaticDependenciesID=38a3336a57b22ef2b3043c3c403a64cc 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000073 seconds.
-  path: Assets/Models/AzumaHouse/Rubber.mat
-  importAddress: Guid(50690939974b64929b2ce6adafb65568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Rubber.mat using Guid(50690939974b64929b2ce6adafb65568) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '90f2099c61fdde106ef569b91473e0a6') in 0.005589125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0ce7495b4b0c456d7f5b5766d1b022aa DependenciesID=6badb495444ab00c477588c8ad353eca StaticDependenciesID=a07a8e7d30d0dc7b042c6038c0c58277 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Models/AzumaHouse/Peinture - Noir.mat
-  importAddress: Guid(c443ea5af060a45c4b7efc71e5e7fdba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Peinture - Noir.mat using Guid(c443ea5af060a45c4b7efc71e5e7fdba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6862a4ba9a1241fe3cf4884ea18e693a') in 0.005368333 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9f119b28153471a0ebd252b9ea0fdfb3 DependenciesID=e35ac104c9a6e1d0152a56d47eca6a30 StaticDependenciesID=267522f4b57fddf3bbffa12f2912ee84 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Models/AzumaHouse/PEN_MATERIAL4.mat
-  importAddress: Guid(b9fb7411d835f4bea916756dbde1bb43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/PEN_MATERIAL4.mat using Guid(b9fb7411d835f4bea916756dbde1bb43) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ad8f0f8b6d054e3ecf39c350ed5af6fc') in 0.005247417 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=342166fa5a7fe9be08c8217f9c701fe0 DependenciesID=3a661e9714fb1e4bec46edbdfd91c2e2 StaticDependenciesID=955921c65a92000a9dec6e8739fc507a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Models/AzumaHouse/Tile.mat
-  importAddress: Guid(2cc6144325ae34b7cb6762ed79465107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Tile.mat using Guid(2cc6144325ae34b7cb6762ed79465107) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a4d17f528a4340a1fac15c970e6ffd02') in 0.0047975 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=afff370949298609f40353cac63eb1a8 DependenciesID=5877c5ba02656948e45f357f247d01d7 StaticDependenciesID=c321708ca375764b4b2c144177312df4 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Models/AzumaHouse/Marble001_1K-JPG_Roughness.jpg
-  importAddress: Guid(0be95960133d44eab9fe93993edb466c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Marble001_1K-JPG_Roughness.jpg using Guid(0be95960133d44eab9fe93993edb466c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd9ff0088fad0ca9fcc8745b619aa320d') in 0.006694542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=678ffec334ddceeda213295ec0fa2e86 DependenciesID=e5770fea516573c9e025577682b84f8a StaticDependenciesID=e41b20ac780e9c7a66d5d9eedc597434 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Models/AzumaHouse/Wood067_1K-JPG_Roughness.jpg
-  importAddress: Guid(6745da90682e04965a7ca76e0e632a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Wood067_1K-JPG_Roughness.jpg using Guid(6745da90682e04965a7ca76e0e632a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ac1c655a5183d9385c3979d2815b68a6') in 0.004706542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=36384ce3f9676dedfbdb881f61737b52 DependenciesID=37b1a12005666f7c45274e65641ae275 StaticDependenciesID=06ce990608550e0d2ec6034b2c190156 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Models/AzumaHouse/WoodFloor007_1K-JPG_Color.jpg
-  importAddress: Guid(ce5a36497b3b2411d91794e510bf9946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/WoodFloor007_1K-JPG_Color.jpg using Guid(ce5a36497b3b2411d91794e510bf9946) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '87e07b1889ce3fe5cfaf9a982dd0d7d2') in 0.004380667 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c7fb744bb926bc1932860329d530be68 DependenciesID=42d5679c3bd31c29126dd9fef60e38ab StaticDependenciesID=be8d0462b1fffb70ef91bcb4c5454a0e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000124 seconds.
-  path: Assets/Models/AzumaHouse/Marble.mat
-  importAddress: Guid(e9a54c0b1b95647049d0603466128d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Marble.mat using Guid(e9a54c0b1b95647049d0603466128d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '349790c1060d9a02b8bdf8ed1737fc54') in 0.006277292 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e528073b47bb8fc9d1b433f460d0e3ba DependenciesID=3e7cd948fc002f86579e61ec7dba74b7 StaticDependenciesID=86fbddf9f194f59929ea8c8a901e3065 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Models/AzumaHouse/Wood078_1K-JPG_NormalGL.jpg
-  importAddress: Guid(4884f52bbf9cf42288896a621dead26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Wood078_1K-JPG_NormalGL.jpg using Guid(4884f52bbf9cf42288896a621dead26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '855a9bc60bb70afe72c014746d1e9aff') in 0.004309666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=aec8e7f4467cc5f484562708c9bf8a74 DependenciesID=e1707bd3342032a72dfb587272dc2c54 StaticDependenciesID=2b7fe65ff3c2f16c0cd810d7a7fda12d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Models/AzumaHouse/Marble001_1K-JPG_NormalGL.jpg
-  importAddress: Guid(93bcbbfd713964e58a2744b59ee8a394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Marble001_1K-JPG_NormalGL.jpg using Guid(93bcbbfd713964e58a2744b59ee8a394) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '184ce794ce9a632a3b9e36f6154054df') in 0.004692667 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=57f3735e22fdcdffc9bbb9e7cdf5b9c9 DependenciesID=770a7b97782a603d1c830c94233f740c StaticDependenciesID=1566ee616beda4c0b423e38ccb879336 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Models/AzumaHouse/Marble012_1K-JPG_Color.jpg
-  importAddress: Guid(b3a358f5bc40c4c7c889388333ac688a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Marble012_1K-JPG_Color.jpg using Guid(b3a358f5bc40c4c7c889388333ac688a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2d9658e3611422e3b6618cc4ce6702be') in 0.005471958 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8069ba42926bc8c8c534cb43f442bb23 DependenciesID=1abbac86143de774d300fbb4a236f97d StaticDependenciesID=01dad6c9dfd0df30cd57c16f31ce8fea 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Models/AzumaHouse/Fabric061_1K-JPG_NormalGL.jpg
-  importAddress: Guid(b6858af8012c34b56be308577fef48a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Fabric061_1K-JPG_NormalGL.jpg using Guid(b6858af8012c34b56be308577fef48a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1727180995b55abdb692c4ba49ace5ec') in 0.004468542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=63177f274353a0e53f001328a5c6ee42 DependenciesID=7839dfd7509a96d55fd09c6e0ceac4b6 StaticDependenciesID=9c037e6ceda6ee18f918302a64464967 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Models/AzumaHouse/Ground.mat
-  importAddress: Guid(e401b24f6b9884028ab881a31e44a7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Ground.mat using Guid(e401b24f6b9884028ab881a31e44a7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ae0fa6949a7dc3f1a8973b238418c8e9') in 0.005044 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=46c834dd6ef2cc74affa9086aa84a70f DependenciesID=1bfce8d470781aec8b7146c863c48a84 StaticDependenciesID=612b662e2054123370fe1e9e2e0e7b0c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000087 seconds.
-  path: Assets/Models/AzumaHouse/Desk.mat
-  importAddress: Guid(4c291914b5ceb4e64a7c85383e867a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Desk.mat using Guid(4c291914b5ceb4e64a7c85383e867a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd827cf560316fabef8106e2e584a1ebc') in 0.007060708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a06cc6d7dc5bb2f659880780dfc4b871 DependenciesID=a50437886349a4560e00b38ba66ab518 StaticDependenciesID=6201ed613ed62a3109d935ca3b149cd7 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Models/AzumaHouse/Déco - Céramique - Porcelaine.mat
-  importAddress: Guid(241212c0d7f89435ca8278ce398481af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Déco - Céramique - Porcelaine.mat using Guid(241212c0d7f89435ca8278ce398481af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e862cc2e5ee658dcd28a683a45cce59e') in 0.005975208 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b5926220b6ef712264b5e43d64cedf87 DependenciesID=e895ef3a4d1bf8f11e4c8a1addde2de9 StaticDependenciesID=d4e4295086dfd9905df41c5f5d82dd0b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Models/AzumaHouse/Métal - Acier inoxydable.mat
-  importAddress: Guid(a4ea6178536c74acb814f4148f43b205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Métal - Acier inoxydable.mat using Guid(a4ea6178536c74acb814f4148f43b205) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '89a8bc944f66d9f61461a7cb2049842f') in 0.005380792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=90203bd8db4d421e8d8f811053dffec6 DependenciesID=ce05e10f57ebe7baee94961ceb46dccc StaticDependenciesID=73e0be02df7008b6f84ee3f96991c664 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Models/AzumaHouse/Plastique - Laminé.mat
-  importAddress: Guid(474e964d777c549109a57569ac2ac1ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Plastique - Laminé.mat using Guid(474e964d777c549109a57569ac2ac1ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '80e42825935a14f1e835a0678f6e273c') in 0.006412875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=51aa56a30f4fc585f50873434cc2ec7d DependenciesID=f124d1e5c88865c6b9d7d9a4e9502cf8 StaticDependenciesID=2312a3c409cfb8d60fd6eb9a3df294c7 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000083 seconds.
-  path: Assets/Models/AzumaHouse/Tiles052_1K_NormalGL.jpg
-  importAddress: Guid(0a1660f241e2241b98d59b1277a8e8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Tiles052_1K_NormalGL.jpg using Guid(0a1660f241e2241b98d59b1277a8e8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e90d28568c3659f98f34468b220a20d6') in 0.004479084 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6595c1868c41ef875950c4d3a0a7e6c3 DependenciesID=0814ede2e4f77ff4a0a5f7341af329b6 StaticDependenciesID=bebb703516bc317ad8417b231bac7cda 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000078 seconds.
-  path: Assets/Models/AzumaHouse/WoodFloor.mat
-  importAddress: Guid(80238d3f5c8b645b19c80644cc37a77d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/WoodFloor.mat using Guid(80238d3f5c8b645b19c80644cc37a77d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2bb1f55beda1887f50b47e3e621f2eea') in 0.00666375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b75c403eb7cf5f024dbef440af4982dc DependenciesID=8a2a9f6a818712c51b24fdd86a4a97f9 StaticDependenciesID=18d7387615bc970cf5d5aa78c043a0c3 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000078 seconds.
-  path: Assets/Models/AzumaHouse/Wood078_1K-JPG_Color.jpg
-  importAddress: Guid(893f18fbc553940faad2b59fe803cbc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Wood078_1K-JPG_Color.jpg using Guid(893f18fbc553940faad2b59fe803cbc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9fa509daaf47d9aedc92f88dc32e07da') in 0.004475375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=883e73b53bc56f669fc0bde9a53ce8bf DependenciesID=8b49e67413708b20bfc0c3a438e21276 StaticDependenciesID=dbb12c3970ab4337de1833317fb93fae 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Models/AzumaHouse/TileFloor.mat
-  importAddress: Guid(06bc9130a8f484c4bb0d00c5ca8f1b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/TileFloor.mat using Guid(06bc9130a8f484c4bb0d00c5ca8f1b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'bfa8165e13736201a709fc94929640be') in 0.005772125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2d94af1281ecf167fae7721572c24f31 DependenciesID=a8af8c26d08fb3898474d522d84e0d6f StaticDependenciesID=edfd0029d94912c3300e6b601b71a456 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Models/AzumaHouse/TileFloorStairs.mat
-  importAddress: Guid(991d9e0a9560f466fb7fd5525e8d72cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/TileFloorStairs.mat using Guid(991d9e0a9560f466fb7fd5525e8d72cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b6be229de521718b59887d1dbde3bb41') in 0.008057334 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d217621999f1cbc19fdc33b7c91bd207 DependenciesID=7e352ccb8f07d2e3a75d155bbd3146e0 StaticDependenciesID=a2fa568365a2988d2ccaa5d962b64bc4 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000104 seconds.
-  path: Assets/Models/AzumaHouse/Tile.001.mat
-  importAddress: Guid(450ab00aa06f449309fda6f0f56ffbaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Tile.001.mat using Guid(450ab00aa06f449309fda6f0f56ffbaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '55c2e70e1b27a2535c8360eebb169a07') in 0.005026167 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=01af188c854576d7c4ec6a5733f4f4b0 DependenciesID=c9ec1a6c85138c1bce0debd11f4bd00c StaticDependenciesID=cb75e52b86520dd52bfd3d54fce5fbac 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Models/AzumaHouse/Tiles052_1K_Color.jpg
-  importAddress: Guid(9c53d94055d4e48d990196151133f8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Tiles052_1K_Color.jpg using Guid(9c53d94055d4e48d990196151133f8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '315ab2522220dfbe304d2f7ce7baf0e1') in 0.004747375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=41c4ef1610b41c854f60ec5249668231 DependenciesID=85ef04813d87881198152023b6467f52 StaticDependenciesID=4b28dc563f6425e2f6a6ed2ad34b7bfc 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Models/AzumaHouse/Marble012_1K-JPG_NormalGL.jpg
-  importAddress: Guid(5914456b52be44c4ab963f90d32da6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Marble012_1K-JPG_NormalGL.jpg using Guid(5914456b52be44c4ab963f90d32da6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9eaf30b01c6d4301c8ec22f3914ce190') in 0.005245333 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1051122c7bddfe0de63c44c50779f2fc DependenciesID=ba07411ea08ab4bdc7e7bee346196ac6 StaticDependenciesID=0b3417a8e0acd439d1aefa461ea3df48 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/Models/AzumaHouse/Marble.001.mat
-  importAddress: Guid(8f71b51ef4f5b4dff9d360f59f4fc889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Marble.001.mat using Guid(8f71b51ef4f5b4dff9d360f59f4fc889) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ab8b1755a806d1830166e8e17ac97372') in 0.006070375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=816187ca7c734bc72f30a41fdce18b75 DependenciesID=03744489befe3178ab90c663b5def3d0 StaticDependenciesID=74a3b1c2fd44cec3f34df39ba548a6ec 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/Models/AzumaHouse/LightBall.mat
-  importAddress: Guid(138e91194a74a4229a3abc4bd7518b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/LightBall.mat using Guid(138e91194a74a4229a3abc4bd7518b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)error: error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
- -> (Import Result ID: 'd0b1dac46546b825c8feb3068cc9f30c') in 0.333410083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eccfaef3cd7bd4eabf4ec0b29c67223e DependenciesID=9ba33de8998a08ef49b22a7cb2ce1557 StaticDependenciesID=0e6ee0f4f8ac7b9829730fe751152404 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000073 seconds.
-  path: Assets/Models/AzumaHouse/Fabric061_1K-JPG_Roughness.jpg
-  importAddress: Guid(69af0e23c303046d59f4308a4e1aab65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Fabric061_1K-JPG_Roughness.jpg using Guid(69af0e23c303046d59f4308a4e1aab65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '409a77b1204db7ca675938ce398ea923') in 0.005961583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=366ad0402c5367ddab04984be2d09aaa DependenciesID=b707cf6e3e1b0a9020d1cc1e4c68cf22 StaticDependenciesID=1f9f7b8b22108bb2b85ee0aa5d7865b5 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Models/AzumaHouse/LightBody.mat
-  importAddress: Guid(69b16f803ff6b4feb8b4a984a2ded7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/LightBody.mat using Guid(69b16f803ff6b4feb8b4a984a2ded7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '720681bbe5f91e3c8f881851070b4e14') in 0.005122875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6a8a7748e5dab076401da87c5578f3c4 DependenciesID=fe5765ef3271e70e79a7efcd4c9d00c4 StaticDependenciesID=ebd57df9f22a1231a36f990128af47a8 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Models/AzumaHouse/TileFloor.002.mat
-  importAddress: Guid(6277366423c1f4fa5917720329e57bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/TileFloor.002.mat using Guid(6277366423c1f4fa5917720329e57bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'cf5b26cf20351ada2d111307705c5a64') in 0.006086708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3a2e949e15261129e24d050f617f8fae DependenciesID=474e396681d244398529f250a46f9d21 StaticDependenciesID=4a43cf2c9978753e0404d0ae6308a3f1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Models/AzumaHouse/LED.mat
-  importAddress: Guid(34868ceda4e104fe0ba100891e68f85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/LED.mat using Guid(34868ceda4e104fe0ba100891e68f85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '56986f09ca5020b2df0b8b4a7f93eecb') in 0.005327041 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=130085ba039f17c4c4ca5cce60fbacb2 DependenciesID=4ff0987620b2cf60dca2c37a0d48ca18 StaticDependenciesID=eab896ca566ae566999b4967ed560365 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000076 seconds.
-  path: Assets/Models/AzumaHouse/Métal - Chrome.mat
-  importAddress: Guid(4f7e5d14d59df454bbac9cfe6973a8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Métal - Chrome.mat using Guid(4f7e5d14d59df454bbac9cfe6973a8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '89d372839cc45d9b629ab98a6b758f68') in 0.004917083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=508fbec669904542cbed0393eea21580 DependenciesID=02975d4bdd4ce6a22d127026e8c7242c StaticDependenciesID=af0574b9a0c0cecff1dcaefa1d33515b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/Models/AzumaHouse/Marble001_1K-JPG_Opacity.jpg
-  importAddress: Guid(98e23a843bdce41938a00e177ba04cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Marble001_1K-JPG_Opacity.jpg using Guid(98e23a843bdce41938a00e177ba04cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'dfc6cac6f62402c2bfec66d4740a0e36') in 0.006503291 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=12d2ad2683af0f83fc9da4ed954bd13f DependenciesID=6fc76bfccaf16e7aace9536134fdc0b2 StaticDependenciesID=8f0a739b87681bd61a2561ddef6e12fd 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000076 seconds.
-  path: Assets/Models/AzumaHouse/Fence.002.mat
-  importAddress: Guid(284396165e5224238a1ff76d55230070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Fence.002.mat using Guid(284396165e5224238a1ff76d55230070) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '46c53f4536f7bd080b84dd1ec84c61a0') in 0.004955125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b384e9156d0fac8151a2b02ffee1adec DependenciesID=a24ead829de83bc819a404bce35d53ba StaticDependenciesID=da524964645fe1b806b20af8e65d873b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Models/AzumaHouse/Bois - Teck laqué.mat
-  importAddress: Guid(66fb628dbbd9d46a2b5019bdad550bc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/AzumaHouse/Bois - Teck laqué.mat using Guid(66fb628dbbd9d46a2b5019bdad550bc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a331625e4e10bee9a40d8d9ff671e76c') in 0.006460083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4c2a98cae613ab80b239b6020e0ee26c DependenciesID=9ab665e4eef01958b6c4f39f08367529 StaticDependenciesID=3a08451fd317181bc472995ffa61aa0e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 672347.683874 seconds.
+  path: Assets/Scripts/EDM2.cs
+  importAddress: Guid(6da22dc05f1f441efba47e1760248e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/EDM2.cs using Guid(6da22dc05f1f441efba47e1760248e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '48287b1c69f98209ba43ddeaaeec922c') in 0.010091542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fdfab3ef428eb10f6f36a0901ccecec2 DependenciesID=73e85220953f2e337361870741a3db9b StaticDependenciesID=f3a3f1b79143e057c9f38469b72d4745 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 

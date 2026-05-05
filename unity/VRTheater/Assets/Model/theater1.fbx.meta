@@ -1,44 +1,49 @@
 fileFormatVersion: 2
-guid: 90c3bc41f368349d497825423d13fa38
+guid: 7dbeaca7cee7a46e4b68867c49ce0808
 ModelImporter:
-  serializedVersion: 22200
+  serializedVersion: 24200
   internalIDToNameTable: []
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Carpet
-    second: {fileID: 2100000, guid: bf8e4f55963254381a22b106cdc184cf, type: 2}
+    second: {fileID: 2100000, guid: f6a665231a9914b8183202aba5614d25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Center
+    second: {fileID: 2100000, guid: 017b39f1d542d4e95a3a528286a07058, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Light
-    second: {fileID: 2100000, guid: b2871c1d3de7f4ba28f644f6aec008f7, type: 2}
+    second: {fileID: 2100000, guid: 7d085a8a33ca04c14ba5fc5cf99a25b7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Screen
-    second: {fileID: 2100000, guid: b92b107afc58548748941fc6a8853e5f, type: 2}
+    second: {fileID: 2100000, guid: 543b4ea666c49440b91da9920aed9c90, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sign
-    second: {fileID: 2100000, guid: 952c2b4367959449cb914dfd4fb303f3, type: 2}
+    second: {fileID: 2100000, guid: e2c400b11b9ed464b9f37bc527ef6856, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Speaker
-    second: {fileID: 2100000, guid: 525212c8a6acd4ca2a90eb7a82e50ab6, type: 2}
+    second: {fileID: 2100000, guid: adf956831b8ca4e85beed2550bd68b56, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wall
-    second: {fileID: 2100000, guid: 6b5776c34cbad4649be87860b17d26ff, type: 2}
+    second: {fileID: 2100000, guid: 993afd17eeae84a9f813b58c53088fbd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: hide
-    second: {fileID: 2100000, guid: 7cff71203b79d416a8d3d52e8ecb5526, type: 2}
+    second: {fileID: 2100000, guid: b04bc24578da44d9cb23b10062d6350c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -51,8 +56,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -93,6 +96,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
