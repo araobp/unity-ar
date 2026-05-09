@@ -1,85 +1,136 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
-using UnityEngine.UI;
 
-// Reference: https://qiita.com/OKsaiyowa/items/29504242ec74cb5dfb04
+/// <summary>
+/// Manages multiple AR markers, instantiating a corresponding prefab for each reference image.
+/// Ensures that only one object is active at a time and maintains a vertical (upright) orientation.
+/// </summary>
 public class MultipleMarkers : MonoBehaviour
 {
     [SerializeField]
-    GameObject[] _prefabs;
+    private GameObject[] _prefabs; // List of prefabs to associate with marker names
 
     [SerializeField]
-    ARTrackedImageManager _arTrackedImageManager;
+    private ARTrackedImageManager _arTrackedImageManager; // Reference to the ARTrackedImageManager component
 
     [SerializeField]
-    Button _buttonToggle;
+    private Button _toggleButton; // UI Button to show/hide the active object
 
-    GameObject _currentArObject = null;
-
-    readonly Dictionary<string, GameObject> _arObjects = new Dictionary<string, GameObject>();
-
-    bool _clear = false;
-
-    public void OnToggle()
-    {
-        _clear = !_clear;
-        if (_currentArObject != null)
-        {
-            _currentArObject.SetActive(!_clear);
-        }
-    }
+    // Stores instantiated objects mapped by the name of their reference image
+    private readonly Dictionary<string, GameObject> _arObjects = new Dictionary<string, GameObject>();
+    private GameObject _activeArObject = null; // Reference to the currently visible AR object
 
     void Start()
     {
-        _arTrackedImageManager.trackedImagesChanged += OnTrackedImagesChanged;
-
-        for (var i = 0; i < _prefabs.Length; i++)
+        // Subscribe to the trackables changed event using AR Foundation 6.x syntax
+        if (_arTrackedImageManager != null)
         {
-            var prefab = Instantiate(_prefabs[i]);
-            prefab.name = _prefabs[i].name;
-            _arObjects[prefab.name] = prefab;
-            prefab.SetActive(false);
+            _arTrackedImageManager.trackablesChanged.AddListener(OnTrackedImagesChanged);
+        }
+
+        // Instantiate all prefabs at startup and hide them
+        foreach (var prefab in _prefabs)
+        {
+            var instance = Instantiate(prefab);
+            instance.name = prefab.name; // Set name to match reference image name
+            instance.SetActive(false);
+            _arObjects[instance.name] = instance;
         }
     }
 
     void OnDisable()
     {
-        _arTrackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
-    }
-
-    void ActivateARObject(ARTrackedImage trackedImage)
-    {
-        var arObject = _arObjects[trackedImage.referenceImage.name];
-        var imageMarkerTransform = trackedImage.transform;
-
-        var arObjectRotation = Quaternion.Euler(0F, imageMarkerTransform.rotation.eulerAngles.y, 0F);
-
-        arObject.transform.SetPositionAndRotation(imageMarkerTransform.transform.position, arObjectRotation);
-        arObject.transform.SetParent(imageMarkerTransform);
-        if (trackedImage.trackingState == TrackingState.Tracking || trackedImage.trackingState == TrackingState.Limited)
+        // Unsubscribe from the event when the component is disabled
+        if (_arTrackedImageManager != null)
         {
-            arObject.SetActive(true);
-            _currentArObject = arObject;
+            _arTrackedImageManager.trackablesChanged.RemoveListener(OnTrackedImagesChanged);
         }
     }
 
-    void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
+    /// <summary>
+    /// Handles changes in tracked images (added, updated, or removed).
+    /// </summary>
+    void OnTrackedImagesChanged(ARTrackablesChangedEventArgs<ARTrackedImage> eventArgs)
     {
-        foreach (var trackedImage in eventArgs.added)
+        ARTrackedImage priorityImage = null;
+
+        // Check all currently tracked images to find one with an active tracking state
+        foreach (var trackedImage in _arTrackedImageManager.trackables)
         {
-            if (_currentArObject != null)
+            if (trackedImage.trackingState == TrackingState.Tracking)
             {
-                _currentArObject.SetActive(false);
+                priorityImage = trackedImage;
+                break; // Select the first successfully tracked image as priority
             }
-            ActivateARObject(trackedImage);
         }
 
-        foreach (var trackedImage in eventArgs.updated)
+        if (priorityImage != null)
         {
-            ActivateARObject(trackedImage);
+            // If a tracked image is found, ensure its corresponding object is active and updated
+            SwitchActiveObject(priorityImage);
+        }
+        else
+        {
+            // If no images are currently "Tracking", update the pose of the last active object if possible
+            UpdateActiveObjectPoseOnly();
         }
     }
 
+    /// <summary>
+    /// Switches visibility to the target image's object and hides the previous one.
+    /// </summary>
+    void SwitchActiveObject(ARTrackedImage targetImage)
+    {
+        if (_arObjects.TryGetValue(targetImage.referenceImage.name, out GameObject newObject))
+        {
+            if (_activeArObject != null && _activeArObject != newObject)
+            {
+                _activeArObject.SetActive(false);
+            }
+
+            UpdateObjectPose(newObject, targetImage);
+            newObject.SetActive(true);
+            _activeArObject = newObject;
+        }
+    }
+
+    /// <summary>
+    /// Corrects rotation here to ensure the object always stands vertically (upright).
+    /// </summary>
+    void UpdateObjectPose(GameObject obj, ARTrackedImage trackedImage)
+    {
+        // 1. Align the position with the center of the marker
+        Vector3 position = trackedImage.transform.position;
+
+        // 2. Extract only the Y-axis rotation (heading) and set X and Z to 0.
+        // This ensures the object stands straight even if the marker is on a tilted surface.
+        float rotationY = trackedImage.transform.rotation.eulerAngles.y;
+        Quaternion verticalRotation = Quaternion.Euler(0, rotationY, 0);
+
+        obj.transform.SetPositionAndRotation(position, verticalRotation);
+        
+        // Note: Parenting the object to the marker would cause it to inherit the marker's tilt.
+        // To maintain verticality, it is safer to keep SetParent(null) or update the pose manually.
+        obj.transform.SetParent(null); 
+    }
+
+    /// <summary>
+    /// Updates the pose of the currently active object if its marker is still being detected.
+    /// </summary>
+    void UpdateActiveObjectPoseOnly()
+    {
+        if (_activeArObject == null) return;
+
+        foreach (var trackedImage in _arTrackedImageManager.trackables)
+        {
+            if (trackedImage.referenceImage.name == _activeArObject.name)
+            {
+                UpdateObjectPose(_activeArObject, trackedImage);
+                break;
+            }
+        }
+    }
 }
