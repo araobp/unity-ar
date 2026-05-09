@@ -4,13 +4,13 @@ I have been developing AR applications since 2021. This repository serves as a c
 
 Requirements:
 - Unity
-- ARFoundation and ARKit/ARCore
+- AR Foundation 6.x (Note: All building blocks are updated to AR Foundation 6.x, except for the EDM (LiDAR-based) module).
 
 ## Building blocks
 
 ### EDM (LiDAR-based)
 
-Note: This building block requires an iPhone or iPad equipped with a LiDAR scanner.
+Note: This building block requires an iPhone or iPad equipped with a LiDAR scanner. Please note that as I do not currently own a LiDAR-equipped device, this code remains dependent on an older version of AR Foundation.
 
 EDM (Electronic Distance Measurement), a term from surveying, is also highly useful in AR applications.
 
@@ -66,6 +66,7 @@ Then I modified the original BIM with Blender (with BlenderBIM add-on) for my AR
 ### Dancing Mixamo characters
 
 This project demonstrates a standard AR application that leverages the EDM feature mentioned above to place characters at specific locations.
+A standard AR application that leverages the EDM functionality to accurately place animated characters at specific real-world locations.
 
 <img src="doc/DanceAim.jpg" width=200>
 
